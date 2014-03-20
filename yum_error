@@ -1,0 +1,435 @@
+[root@localhost (aarch64) /]# yum install qt4-devel
+Loaded plugins: langpacks, refresh-packagekit
+Unable to connect to dbus
+http://dmarlin.fedorapeople.org/yum/f19/aarch64/os/Packages/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: dmarlin.fedorapeople.org; Unknown error"
+Trying other mirror.
+http://arm.koji.fedoraproject.org/aarch64/stage4/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+Resolving Dependencies
+--> Running transaction check
+---> Package qt-devel.aarch64 1:4.8.5-2.x2.fc19 will be installed
+--> Processing Dependency: qt(aarch-64) = 1:4.8.5-2.x2.fc19 for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: qt-sqlite(aarch-64) = 1:4.8.5-2.x2.fc19 for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(gl) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(glu) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(ice) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(sm) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(x11) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xcursor) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xext) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xfixes) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xft) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xi) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xinerama) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xproto) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xrandr) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xrender) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xt) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: pkgconfig(xv) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: qt-x11(aarch-64) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQt3Support.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtCLucene.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtCore.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtDBus.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtDeclarative.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtDesigner.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtDesignerComponents.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtGui.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtHelp.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtMultimedia.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtNetwork.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtOpenGL.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtScript.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtScriptTools.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtSql.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtSvg.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtTest.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtXml.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libQtXmlPatterns.so.4()(64bit) for package: 1:qt-devel-4.8.5-2.x2.fc19.aarch64
+--> Running transaction check
+---> Package libICE-devel.aarch64 0:1.0.8-5.fc19 will be installed
+--> Processing Dependency: libICE = 1.0.8-5.fc19 for package: libICE-devel-1.0.8-5.fc19.aarch64
+--> Processing Dependency: libICE.so.6()(64bit) for package: libICE-devel-1.0.8-5.fc19.aarch64
+---> Package libSM-devel.aarch64 0:1.2.1-5.fc19 will be installed
+--> Processing Dependency: libSM = 1.2.1-5.fc19 for package: libSM-devel-1.2.1-5.fc19.aarch64
+--> Processing Dependency: libSM.so.6()(64bit) for package: libSM-devel-1.2.1-5.fc19.aarch64
+---> Package libX11-devel.aarch64 0:1.6.0-1.fc19 will be installed
+--> Processing Dependency: pkgconfig(xcb) >= 1.1.92 for package: libX11-devel-1.6.0-1.fc19.aarch64
+--> Processing Dependency: pkgconfig(xcb) for package: libX11-devel-1.6.0-1.fc19.aarch64
+---> Package libXcursor-devel.aarch64 0:1.1.14-1.fc19 will be installed
+--> Processing Dependency: libXcursor = 1.1.14-1.fc19 for package: libXcursor-devel-1.1.14-1.fc19.aarch64
+--> Processing Dependency: libXcursor.so.1()(64bit) for package: libXcursor-devel-1.1.14-1.fc19.aarch64
+---> Package libXext-devel.aarch64 0:1.3.2-1.fc19 will be installed
+--> Processing Dependency: libXext = 1.3.2-1.fc19 for package: libXext-devel-1.3.2-1.fc19.aarch64
+--> Processing Dependency: libXext.so.6()(64bit) for package: libXext-devel-1.3.2-1.fc19.aarch64
+---> Package libXfixes-devel.aarch64 0:5.0.1-1.fc19 will be installed
+--> Processing Dependency: libXfixes = 5.0.1-1.fc19 for package: libXfixes-devel-5.0.1-1.fc19.aarch64
+--> Processing Dependency: libXfixes.so.3()(64bit) for package: libXfixes-devel-5.0.1-1.fc19.aarch64
+---> Package libXft-devel.aarch64 0:2.3.1-4.fc19 will be installed
+--> Processing Dependency: libXft = 2.3.1-4.fc19 for package: libXft-devel-2.3.1-4.fc19.aarch64
+--> Processing Dependency: pkgconfig(fontconfig) for package: libXft-devel-2.3.1-4.fc19.aarch64
+--> Processing Dependency: pkgconfig(freetype2) for package: libXft-devel-2.3.1-4.fc19.aarch64
+--> Processing Dependency: libXft.so.2()(64bit) for package: libXft-devel-2.3.1-4.fc19.aarch64
+---> Package libXi-devel.aarch64 0:1.7.2-1.fc19 will be installed
+--> Processing Dependency: libXi = 1.7.2-1.fc19 for package: libXi-devel-1.7.2-1.fc19.aarch64
+--> Processing Dependency: libXi.so.6()(64bit) for package: libXi-devel-1.7.2-1.fc19.aarch64
+---> Package libXinerama-devel.aarch64 0:1.1.3-1.fc19 will be installed
+--> Processing Dependency: libXinerama = 1.1.3-1.fc19 for package: libXinerama-devel-1.1.3-1.fc19.aarch64
+--> Processing Dependency: libXinerama.so.1()(64bit) for package: libXinerama-devel-1.1.3-1.fc19.aarch64
+---> Package libXrandr-devel.aarch64 0:1.4.1-1.fc19 will be installed
+--> Processing Dependency: libXrandr = 1.4.1-1.fc19 for package: libXrandr-devel-1.4.1-1.fc19.aarch64
+--> Processing Dependency: libXrandr.so.2()(64bit) for package: libXrandr-devel-1.4.1-1.fc19.aarch64
+---> Package libXrender-devel.aarch64 0:0.9.7-6.20130524git786f78fd8.fc19 will be installed
+--> Processing Dependency: libXrender = 0.9.7-6.20130524git786f78fd8.fc19 for package: libXrender-devel-0.9.7-6.20130524git786f78fd8.fc19.aarch64
+--> Processing Dependency: libXrender.so.1()(64bit) for package: libXrender-devel-0.9.7-6.20130524git786f78fd8.fc19.aarch64
+---> Package libXt-devel.aarch64 0:1.1.4-5.fc19 will be installed
+--> Processing Dependency: libXt = 1.1.4-5.fc19 for package: libXt-devel-1.1.4-5.fc19.aarch64
+--> Processing Dependency: libXt.so.6()(64bit) for package: libXt-devel-1.1.4-5.fc19.aarch64
+---> Package libXv-devel.aarch64 0:1.0.9-1.fc19 will be installed
+--> Processing Dependency: libXv = 1.0.9-1.fc19 for package: libXv-devel-1.0.9-1.fc19.aarch64
+--> Processing Dependency: libXv.so.1()(64bit) for package: libXv-devel-1.0.9-1.fc19.aarch64
+---> Package mesa-libGL-devel.aarch64 0:9.1-3.x1.fc19 will be installed
+--> Processing Dependency: mesa-libGL = 9.1-3.x1.fc19 for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+--> Processing Dependency: pkgconfig(libdrm) >= 2.4.24 for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+--> Processing Dependency: gl-manpages for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+--> Processing Dependency: pkgconfig(xdamage) for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+--> Processing Dependency: pkgconfig(xxf86vm) for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+--> Processing Dependency: libGL.so.1()(64bit) for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+--> Processing Dependency: libglapi.so.0()(64bit) for package: mesa-libGL-devel-9.1-3.x1.fc19.aarch64
+---> Package mesa-libGLU-devel.aarch64 0:9.0.0-2.fc19 will be installed
+--> Processing Dependency: mesa-libGLU(aarch-64) = 9.0.0-2.fc19 for package: mesa-libGLU-devel-9.0.0-2.fc19.aarch64
+--> Processing Dependency: libGLU.so.1()(64bit) for package: mesa-libGLU-devel-9.0.0-2.fc19.aarch64
+---> Package qt.aarch64 1:4.8.5-2.x2.fc19 will be installed
+--> Processing Dependency: qt-settings for package: 1:qt-4.8.5-2.x2.fc19.aarch64
+---> Package qt-x11.aarch64 1:4.8.5-2.x2.fc19 will be installed
+--> Processing Dependency: libasound.so.2(ALSA_0.9)(64bit) for package: 1:qt-x11-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libasound.so.2(ALSA_0.9.0rc4)(64bit) for package: 1:qt-x11-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libasound.so.2()(64bit) for package: 1:qt-x11-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libfontconfig.so.1()(64bit) for package: 1:qt-x11-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libfreetype.so.6()(64bit) for package: 1:qt-x11-4.8.5-2.x2.fc19.aarch64
+--> Processing Dependency: libmng.so.1()(64bit) for package: 1:qt-x11-4.8.5-2.x2.fc19.aarch64
+---> Package xorg-x11-proto-devel.noarch 0:7.7-4.fc19 will be installed
+--> Running transaction check
+---> Package alsa-lib.aarch64 0:1.0.27.2-1.fc19 will be installed
+---> Package fontconfig.aarch64 0:2.10.93-1.fc19 will be installed
+--> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.10.93-1.fc19.aarch64
+---> Package fontconfig-devel.aarch64 0:2.10.93-1.fc19 will be installed
+---> Package freetype.aarch64 0:2.4.11-7.fc19 will be installed
+---> Package freetype-devel.aarch64 0:2.4.11-7.fc19 will be installed
+--> Processing Dependency: zlib-devel for package: freetype-devel-2.4.11-7.fc19.aarch64
+---> Package gl-manpages.noarch 0:1.1-6.20130122.fc19 will be installed
+---> Package libICE.aarch64 0:1.0.8-5.fc19 will be installed
+---> Package libSM.aarch64 0:1.2.1-5.fc19 will be installed
+---> Package libXcursor.aarch64 0:1.1.14-1.fc19 will be installed
+---> Package libXdamage-devel.aarch64 0:1.1.4-3.fc19 will be installed
+--> Processing Dependency: libXdamage = 1.1.4-3.fc19 for package: libXdamage-devel-1.1.4-3.fc19.aarch64
+--> Processing Dependency: libXdamage.so.1()(64bit) for package: libXdamage-devel-1.1.4-3.fc19.aarch64
+---> Package libXext.aarch64 0:1.3.2-1.fc19 will be installed
+---> Package libXfixes.aarch64 0:5.0.1-1.fc19 will be installed
+---> Package libXft.aarch64 0:2.3.1-4.fc19 will be installed
+---> Package libXi.aarch64 0:1.7.2-1.fc19 will be installed
+---> Package libXinerama.aarch64 0:1.1.3-1.fc19 will be installed
+---> Package libXrandr.aarch64 0:1.4.1-1.fc19 will be installed
+---> Package libXrender.aarch64 0:0.9.7-6.20130524git786f78fd8.fc19 will be installed
+---> Package libXt.aarch64 0:1.1.4-5.fc19 will be installed
+---> Package libXv.aarch64 0:1.0.9-1.fc19 will be installed
+---> Package libXxf86vm-devel.aarch64 0:1.1.3-1.fc19 will be installed
+--> Processing Dependency: libXxf86vm = 1.1.3-1.fc19 for package: libXxf86vm-devel-1.1.3-1.fc19.aarch64
+--> Processing Dependency: libXxf86vm.so.1()(64bit) for package: libXxf86vm-devel-1.1.3-1.fc19.aarch64
+---> Package libdrm-devel.aarch64 0:2.4.46-1.fc19 will be installed
+---> Package libmng.aarch64 0:1.0.10-11.fc19 will be installed
+--> Processing Dependency: liblcms.so.1()(64bit) for package: libmng-1.0.10-11.fc19.aarch64
+---> Package libxcb-devel.aarch64 0:1.9-3.fc19 will be installed
+--> Processing Dependency: pkgconfig(xau) >= 0.99.2 for package: libxcb-devel-1.9-3.fc19.aarch64
+---> Package mesa-libGL.aarch64 0:9.1-3.x1.fc19 will be installed
+---> Package mesa-libGLU.aarch64 0:9.0.0-2.fc19 will be installed
+---> Package mesa-libglapi.aarch64 0:9.1-3.x1.fc19 will be installed
+---> Package qt-settings.noarch 0:19-23.1.fc19 will be installed
+--> Running transaction check
+---> Package fontpackages-filesystem.noarch 0:1.44-7.fc19 will be installed
+---> Package lcms-libs.aarch64 0:1.19-9.fc19 will be installed
+---> Package libXau-devel.aarch64 0:1.0.8-1.fc19 will be installed
+---> Package libXdamage.aarch64 0:1.1.4-3.fc19 will be installed
+---> Package libXxf86vm.aarch64 0:1.1.3-1.fc19 will be installed
+---> Package zlib-devel.aarch64 0:1.2.7-10.fc19 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+===========================================================================================================================================
+ Package                               Arch                  Version                                            Repository            Size
+===========================================================================================================================================
+Installing:
+ qt-devel                              aarch64               1:4.8.5-2.x2.fc19                                  stage4                10 M
+Installing for dependencies:
+ alsa-lib                              aarch64               1.0.27.2-1.fc19                                    stage4               345 k
+ fontconfig                            aarch64               2.10.93-1.fc19                                     stage4               217 k
+ fontconfig-devel                      aarch64               2.10.93-1.fc19                                     stage4               125 k
+ fontpackages-filesystem               noarch                1.44-7.fc19                                        stage4               8.6 k
+ freetype                              aarch64               2.4.11-7.fc19                                      stage4               352 k
+ freetype-devel                        aarch64               2.4.11-7.fc19                                      stage4               353 k
+ gl-manpages                           noarch                1.1-6.20130122.fc19                                stage4               994 k
+ lcms-libs                             aarch64               1.19-9.fc19                                        stage4                94 k
+ libICE                                aarch64               1.0.8-5.fc19                                       stage4                57 k
+ libICE-devel                          aarch64               1.0.8-5.fc19                                       stage4                48 k
+ libSM                                 aarch64               1.2.1-5.fc19                                       stage4                35 k
+ libSM-devel                           aarch64               1.2.1-5.fc19                                       stage4                11 k
+ libX11-devel                          aarch64               1.6.0-1.fc19                                       stage4               978 k
+ libXau-devel                          aarch64               1.0.8-1.fc19                                       stage4                13 k
+ libXcursor                            aarch64               1.1.14-1.fc19                                      stage4                27 k
+ libXcursor-devel                      aarch64               1.1.14-1.fc19                                      stage4                22 k
+ libXdamage                            aarch64               1.1.4-3.fc19                                       stage4                19 k
+ libXdamage-devel                      aarch64               1.1.4-3.fc19                                       stage4               8.3 k
+ libXext                               aarch64               1.3.2-1.fc19                                       stage4                34 k
+ libXext-devel                         aarch64               1.3.2-1.fc19                                       stage4                73 k
+ libXfixes                             aarch64               5.0.1-1.fc19                                       stage4                16 k
+ libXfixes-devel                       aarch64               5.0.1-1.fc19                                       stage4                12 k
+ libXft                                aarch64               2.3.1-4.fc19                                       stage4                52 k
+ libXft-devel                          aarch64               2.3.1-4.fc19                                       stage4                18 k
+ libXi                                 aarch64               1.7.2-1.fc19                                       stage4                36 k
+ libXi-devel                           aarch64               1.7.2-1.fc19                                       stage4               103 k
+ libXinerama                           aarch64               1.1.3-1.fc19                                       stage4                12 k
+ libXinerama-devel                     aarch64               1.1.3-1.fc19                                       stage4                12 k
+ libXrandr                             aarch64               1.4.1-1.fc19                                       stage4                22 k
+ libXrandr-devel                       aarch64               1.4.1-1.fc19                                       stage4                19 k
+ libXrender                            aarch64               0.9.7-6.20130524git786f78fd8.fc19                  stage4                22 k
+ libXrender-devel                      aarch64               0.9.7-6.20130524git786f78fd8.fc19                  stage4                15 k
+ libXt                                 aarch64               1.1.4-5.fc19                                       stage4               150 k
+ libXt-devel                           aarch64               1.1.4-5.fc19                                       stage4               444 k
+ libXv                                 aarch64               1.0.9-1.fc19                                       stage4                16 k
+ libXv-devel                           aarch64               1.0.9-1.fc19                                       stage4                38 k
+ libXxf86vm                            aarch64               1.1.3-1.fc19                                       stage4                16 k
+ libXxf86vm-devel                      aarch64               1.1.3-1.fc19                                       stage4                17 k
+ libdrm-devel                          aarch64               2.4.46-1.fc19                                      stage4                82 k
+ libmng                                aarch64               1.0.10-11.fc19                                     stage4               152 k
+ libxcb-devel                          aarch64               1.9-3.fc19                                         stage4               1.0 M
+ mesa-libGL                            aarch64               9.1-3.x1.fc19                                      stage4               149 k
+ mesa-libGL-devel                      aarch64               9.1-3.x1.fc19                                      stage4               136 k
+ mesa-libGLU                           aarch64               9.0.0-2.fc19                                       stage4               170 k
+ mesa-libGLU-devel                     aarch64               9.0.0-2.fc19                                       stage4               7.7 k
+ mesa-libglapi                         aarch64               9.1-3.x1.fc19                                      stage4                56 k
+ qt                                    aarch64               1:4.8.5-2.x2.fc19                                  stage4               4.1 M
+ qt-settings                           noarch                19-23.1.fc19                                       stage4                15 k
+ qt-x11                                aarch64               1:4.8.5-2.x2.fc19                                  stage4                11 M
+ xorg-x11-proto-devel                  noarch                7.7-4.fc19                                         stage4               270 k
+ zlib-devel                            aarch64               1.2.7-10.fc19                                      stage4                48 k
+
+Transaction Summary
+===========================================================================================================================================
+Install  1 Package (+51 Dependent packages)
+
+Total download size: 32 M
+Installed size: 102 M
+Is this ok [y/d/N]: y
+Downloading packages:
+alsa-lib-1.0.27.2-1.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/alsa-lib-1.0.27.2-1.fc19/alsa-lib-1.0.27.2-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+fontconfig-2.10.93-1.fc19.aarc FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/fontconfig-2.10.93-1.fc19/fontconfig-2.10.93-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+fontconfig-devel-2.10.93-1.fc1 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/fontconfig-2.10.93-1.fc19/fontconfig-devel-2.10.93-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+fontpackages-filesystem-1.44-7 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/fontpackages-1.44-7.fc19/fontpackages-filesystem-1.44-7.fc19.noarch.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+freetype-2.4.11-7.fc19.aarch64 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/freetype-2.4.11-7.fc19/freetype-2.4.11-7.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+freetype-devel-2.4.11-7.fc19.a FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/freetype-2.4.11-7.fc19/freetype-devel-2.4.11-7.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+gl-manpages-1.1-6.20130122.fc1 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/gl-manpages-1.1-6.20130122.fc19/gl-manpages-1.1-6.20130122.fc19.noarch.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+lcms-libs-1.19-9.fc19.aarch64. FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/lcms-1.19-9.fc19/lcms-libs-1.19-9.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libICE-1.0.8-5.fc19.aarch64.rp FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libICE-1.0.8-5.fc19/libICE-1.0.8-5.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libICE-devel-1.0.8-5.fc19.aarc FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libICE-1.0.8-5.fc19/libICE-devel-1.0.8-5.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libSM-1.2.1-5.fc19.aarch64.rpm FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libSM-1.2.1-5.fc19/libSM-1.2.1-5.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libSM-devel-1.2.1-5.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libSM-1.2.1-5.fc19/libSM-devel-1.2.1-5.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libX11-devel-1.6.0-1.fc19.aarc FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libX11-1.6.0-1.fc19/libX11-devel-1.6.0-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXau-devel-1.0.8-1.fc19.aarc FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXau-1.0.8-1.fc19/libXau-devel-1.0.8-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXcursor-1.1.14-1.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXcursor-1.1.14-1.fc19/libXcursor-1.1.14-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXcursor-devel-1.1.14-1.fc19 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXcursor-1.1.14-1.fc19/libXcursor-devel-1.1.14-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXdamage-1.1.4-3.fc19.aarch6 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXdamage-1.1.4-3.fc19/libXdamage-1.1.4-3.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXdamage-devel-1.1.4-3.fc19. FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXdamage-1.1.4-3.fc19/libXdamage-devel-1.1.4-3.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXext-1.3.2-1.fc19.aarch64.r FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXext-1.3.2-1.fc19/libXext-1.3.2-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXext-devel-1.3.2-1.fc19.aar FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXext-1.3.2-1.fc19/libXext-devel-1.3.2-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXfixes-5.0.1-1.fc19.aarch64 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXfixes-5.0.1-1.fc19/libXfixes-5.0.1-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXfixes-devel-5.0.1-1.fc19.a FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXfixes-5.0.1-1.fc19/libXfixes-devel-5.0.1-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXft-2.3.1-4.fc19.aarch64.rp FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXft-2.3.1-4.fc19/libXft-2.3.1-4.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXft-devel-2.3.1-4.fc19.aarc FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXft-2.3.1-4.fc19/libXft-devel-2.3.1-4.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXi-1.7.2-1.fc19.aarch64.rpm FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXi-1.7.2-1.fc19/libXi-1.7.2-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXi-devel-1.7.2-1.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXi-1.7.2-1.fc19/libXi-devel-1.7.2-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXinerama-1.1.3-1.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXinerama-1.1.3-1.fc19/libXinerama-1.1.3-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXinerama-devel-1.1.3-1.fc19 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXinerama-1.1.3-1.fc19/libXinerama-devel-1.1.3-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXrandr-1.4.1-1.fc19.aarch64 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXrandr-1.4.1-1.fc19/libXrandr-1.4.1-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXrandr-devel-1.4.1-1.fc19.a FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXrandr-1.4.1-1.fc19/libXrandr-devel-1.4.1-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXrender-0.9.7-6.20130524git FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXrender-0.9.7-6.20130524git786f78fd8.fc19/libXrender-0.9.7-6.20130524git786f78fd8.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXrender-devel-0.9.7-6.20130 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXrender-0.9.7-6.20130524git786f78fd8.fc19/libXrender-devel-0.9.7-6.20130524git786f78fd8.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXt-1.1.4-5.fc19.aarch64.rpm FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXt-1.1.4-5.fc19/libXt-1.1.4-5.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXt-devel-1.1.4-5.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXt-1.1.4-5.fc19/libXt-devel-1.1.4-5.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXv-1.0.9-1.fc19.aarch64.rpm FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXv-1.0.9-1.fc19/libXv-1.0.9-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXv-devel-1.0.9-1.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXv-1.0.9-1.fc19/libXv-devel-1.0.9-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXxf86vm-1.1.3-1.fc19.aarch6 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXxf86vm-1.1.3-1.fc19/libXxf86vm-1.1.3-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libXxf86vm-devel-1.1.3-1.fc19. FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libXxf86vm-1.1.3-1.fc19/libXxf86vm-devel-1.1.3-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libdrm-devel-2.4.46-1.fc19.aar FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libdrm-2.4.46-1.fc19/libdrm-devel-2.4.46-1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libmng-1.0.10-11.fc19.aarch64. FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libmng-1.0.10-11.fc19/libmng-1.0.10-11.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+libxcb-devel-1.9-3.fc19.aarch6 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/libxcb-1.9-3.fc19/libxcb-devel-1.9-3.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+mesa-libGL-9.1-3.x1.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/mesa-9.1-3.x1.fc19/mesa-libGL-9.1-3.x1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+mesa-libGL-devel-9.1-3.x1.fc19 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/mesa-9.1-3.x1.fc19/mesa-libGL-devel-9.1-3.x1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+mesa-libGLU-9.0.0-2.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/mesa-libGLU-9.0.0-2.fc19/mesa-libGLU-9.0.0-2.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+mesa-libGLU-devel-9.0.0-2.fc19 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/mesa-libGLU-9.0.0-2.fc19/mesa-libGLU-devel-9.0.0-2.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+mesa-libglapi-9.1-3.x1.fc19.aa FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/mesa-9.1-3.x1.fc19/mesa-libglapi-9.1-3.x1.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+qt-4.8.5-2.x2.fc19.aarch64.rpm FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/qt-4.8.5-2.x2.fc19/qt-4.8.5-2.x2.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+qt-devel-4.8.5-2.x2.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/qt-4.8.5-2.x2.fc19/qt-devel-4.8.5-2.x2.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+qt-x11-4.8.5-2.x2.fc19.aarch64 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/qt-4.8.5-2.x2.fc19/qt-x11-4.8.5-2.x2.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+qt-settings-19-23.1.fc19.noarc FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/kde-settings-19-23.1.fc19/qt-settings-19-23.1.fc19.noarch.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+xorg-x11-proto-devel-7.7-4.fc1 FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/xorg-x11-proto-devel-7.7-4.fc19/xorg-x11-proto-devel-7.7-4.fc19.noarch.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+zlib-devel-1.2.7-10.fc19.aarch FAILED                                          
+http://arm.koji.fedoraproject.org/aarch64/stage4/zlib-1.2.7-10.fc19/zlib-devel-1.2.7-10.fc19.aarch64.rpm: [Errno 14] curl#6 - "Could not resolve host: arm.koji.fedoraproject.org; Unknown error"
+Trying other mirror.
+
+
+Error downloading packages:
+  libXxf86vm-devel-1.1.3-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXrandr-devel-1.4.1-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXfixes-5.0.1-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  alsa-lib-1.0.27.2-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  freetype-2.4.11-7.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXfixes-devel-5.0.1-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXext-1.3.2-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  fontconfig-2.10.93-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  1:qt-4.8.5-2.x2.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libICE-1.0.8-5.fc19.aarch64: [Errno 256] No more mirrors to try.
+  freetype-devel-2.4.11-7.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXinerama-devel-1.1.3-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  1:qt-x11-4.8.5-2.x2.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXdamage-devel-1.1.4-3.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXi-devel-1.7.2-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXdamage-1.1.4-3.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXv-devel-1.0.9-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXft-2.3.1-4.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXv-1.0.9-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  mesa-libGL-devel-9.1-3.x1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXcursor-devel-1.1.14-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXrandr-1.4.1-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  xorg-x11-proto-devel-7.7-4.fc19.noarch: [Errno 256] No more mirrors to try.
+  libXft-devel-2.3.1-4.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libICE-devel-1.0.8-5.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXt-1.1.4-5.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXinerama-1.1.3-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXau-devel-1.0.8-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  fontpackages-filesystem-1.44-7.fc19.noarch: [Errno 256] No more mirrors to try.
+  mesa-libGLU-9.0.0-2.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libSM-1.2.1-5.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXi-1.7.2-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  mesa-libGL-9.1-3.x1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  qt-settings-19-23.1.fc19.noarch: [Errno 256] No more mirrors to try.
+  libXxf86vm-1.1.3-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  mesa-libglapi-9.1-3.x1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  mesa-libGLU-devel-9.0.0-2.fc19.aarch64: [Errno 256] No more mirrors to try.
+  gl-manpages-1.1-6.20130122.fc19.noarch: [Errno 256] No more mirrors to try.
+  libSM-devel-1.2.1-5.fc19.aarch64: [Errno 256] No more mirrors to try.
+  1:qt-devel-4.8.5-2.x2.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libX11-devel-1.6.0-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXrender-devel-0.9.7-6.20130524git786f78fd8.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libmng-1.0.10-11.fc19.aarch64: [Errno 256] No more mirrors to try.
+  fontconfig-devel-2.10.93-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libdrm-devel-2.4.46-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXcursor-1.1.14-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXrender-0.9.7-6.20130524git786f78fd8.fc19.aarch64: [Errno 256] No more mirrors to try.
+  zlib-devel-1.2.7-10.fc19.aarch64: [Errno 256] No more mirrors to try.
+  lcms-libs-1.19-9.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libxcb-devel-1.9-3.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXext-devel-1.3.2-1.fc19.aarch64: [Errno 256] No more mirrors to try.
+  libXt-devel-1.1.4-5.fc19.aarch64: [Errno 256] No more mirrors to try.
