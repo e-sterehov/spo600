@@ -1,0 +1,933 @@
+[root@localhost (aarch64) qtwebkit19]# rpmbuild --rebuild --quiet qtwebkit-2.3.3-3.fc19.src.rpm 
+Unable to determine current SVN revision in /root/rpmbuild/BUILD/webkit-qtwebkit-23 at /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/Scripts/VCSUtils.pm line 396.
+Project MESSAGE: Building WebKit2 with Qt versions older than 5.0 is not supported. Disabling WebKit2.
+Project MESSAGE: Read http://www.mail-archive.com/webkit-qt@lists.webkit.org/msg01674.html for more information.
+offlineasm: Parsing /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter.asm and creating offset extractor LLIntDesiredOffsets.h.
+offlineasm: Including file /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter64.asm
+Project MESSAGE: Running perl /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake/syncqt-4.8 -outdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release -separate-module QtWebKit:/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source:WebKit/qt/Api
+offlineasm: Including file /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter32_64.asm
+Project MESSAGE: Running perl /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake/syncqt-4.8 -outdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release -separate-module QtWebKit:/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source:WebKit/qt/Api
+moc: fatal: Not a git repository (or any of the parent directories): .git: No such file
+No document found at /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts/IDLParser.pm line 168.
+make[3]: *** [generated/supplemental_dependency.tmp] Error 1
+make[2]: *** [sub-DerivedSources-pri-make_for_qmake] Error 2
+make[1]: *** [sub-Source-WebCore-WebCore-pro-recursive_qmake] Error 2
+make[1]: *** Waiting for unfinished jobs....
+offlineasm: offset extractor LLIntDesiredOffsets.h successfully generated.
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:62:2: error: #error "The MacroAssembler is not supported on this platform."
+ #error "The MacroAssembler is not supported on this platform."
+  ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopiedBlock.h:33:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopiedAllocator.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopiedSpace.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopyVisitor.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/Heap.h:26,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/WriteBarrier.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/PropertyStorage.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/IndexingHeader.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/ArrayConventions.h:24,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSArray.h:24,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ArrayProfile.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:28:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h: In constructor 'JSC::JSValue::JSValue(JSC::JSCell*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h:198:57: warning: cast from 'JSC::JSCell*' to 'int32_t {aka int}' loses precision [-fpermissive]
+         u.asBits.payload = reinterpret_cast<int32_t>(ptr);
+                                                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h: In constructor 'JSC::JSValue::JSValue(const JSC::JSCell*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h:207:78: warning: cast from 'JSC::JSCell*' to 'int32_t {aka int}' loses precision [-fpermissive]
+         u.asBits.payload = reinterpret_cast<int32_t>(const_cast<JSCell*>(ptr));
+                                                                              ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: At global scope:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:67:50: error: expected class-name before '{' token
+ class MacroAssembler : public MacroAssemblerBase {
+                                                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:70:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::pop;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:71:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::jump;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:72:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::branch32;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:73:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::move;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:161:15: error: 'RegisterID' has not been declared
+     void peek(RegisterID dest, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:166:5: error: 'Address' does not name a type
+     Address addressForPoke(int index)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:171:15: error: 'RegisterID' has not been declared
+     void poke(RegisterID src, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:176:15: error: 'TrustedImm32' has not been declared
+     void poke(TrustedImm32 value, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:176:10: error: 'void JSC::MacroAssembler::poke(int, int)' cannot be overloaded
+     void poke(TrustedImm32 value, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:171:10: error: with 'void JSC::MacroAssembler::poke(int, int)'
+     void poke(RegisterID src, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:181:15: error: 'TrustedImmPtr' has not been declared
+     void poke(TrustedImmPtr imm, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:181:10: error: 'void JSC::MacroAssembler::poke(int, int)' cannot be overloaded
+     void poke(TrustedImmPtr imm, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:171:10: error: with 'void JSC::MacroAssembler::poke(int, int)'
+     void poke(RegisterID src, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:20: error: 'RelationalCondition' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:46: error: 'RegisterID' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:62: error: 'TrustedImmPtr' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:81: error: 'Label' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                                                                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:20: error: 'RelationalCondition' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:46: error: 'RegisterID' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:62: error: 'ImmPtr' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:74: error: 'Label' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                                                                          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:10: error: 'void JSC::MacroAssembler::branchPtr(int, int, int, int)' cannot be overloaded
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: error: with 'void JSC::MacroAssembler::branchPtr(int, int, int, int)'
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:61: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:77: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:61: error: 'TrustedImm32' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:79: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                                                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:10: error: 'void JSC::MacroAssembler::branch32(int, int, int, int)' cannot be overloaded
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: error: with 'void JSC::MacroAssembler::branch32(int, int, int, int)'
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:61: error: 'Imm32' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:72: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                                                                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:10: error: 'void JSC::MacroAssembler::branch32(int, int, int, int)' cannot be overloaded
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: error: with 'void JSC::MacroAssembler::branch32(int, int, int, int)'
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:62: error: 'Address' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:77: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:10: error: 'void JSC::MacroAssembler::branch32(int, int, int, int)' cannot be overloaded
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: error: with 'void JSC::MacroAssembler::branch32(int, int, int, int)'
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:241:5: error: 'Jump' does not name a type
+     Jump branch32(RelationalCondition cond, TrustedImm32 left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:246:5: error: 'Jump' does not name a type
+     Jump branch32(RelationalCondition cond, Imm32 left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:24: error: 'ResultCondition' has not been declared
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:46: error: 'RegisterID' has not been declared
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:62: error: 'Label' has not been declared
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:257:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranchPtr(RelationalCondition cond, Address left, TrustedImmPtr right = TrustedImmPtr(0))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:262:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranchPtrWithPatch(RelationalCondition cond, Address left, DataLabelPtr& dataLabel, TrustedImmPtr initialRightValue = TrustedImmPtr(0))
+     ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:267:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableJump()
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:272:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranchTest32(ResultCondition cond, RegisterID reg, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:279:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranch32(RelationalCondition cond, RegisterID reg, TrustedImm32 imm)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:285:15: error: 'Label' has not been declared
+     void jump(Label target)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:292:12: error: 'RelationalCondition' does not name a type
+     static RelationalCondition commute(RelationalCondition condition)
+            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:17: error: 'Address' has not been declared
+     void addPtr(Address src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:30: error: 'RegisterID' has not been declared
+     void addPtr(Address src, RegisterID dest)
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:334:17: error: 'AbsoluteAddress' has not been declared
+     void addPtr(AbsoluteAddress src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:334:38: error: 'RegisterID' has not been declared
+     void addPtr(AbsoluteAddress src, RegisterID dest)
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:334:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(AbsoluteAddress src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:339:17: error: 'RegisterID' has not been declared
+     void addPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:339:33: error: 'RegisterID' has not been declared
+     void addPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:339:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:344:17: error: 'TrustedImm32' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID srcDest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:344:35: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID srcDest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:344:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(TrustedImm32 imm, RegisterID srcDest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:349:17: error: 'TrustedImmPtr' has not been declared
+     void addPtr(TrustedImmPtr imm, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:349:36: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImmPtr imm, RegisterID dest)
+                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:349:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(TrustedImmPtr imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:354:17: error: 'TrustedImm32' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:354:35: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID src, RegisterID dest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:354:51: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID src, RegisterID dest)
+                                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:359:17: error: 'TrustedImm32' has not been declared
+     void addPtr(TrustedImm32 imm, AbsoluteAddress address)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:359:35: error: 'AbsoluteAddress' has not been declared
+     void addPtr(TrustedImm32 imm, AbsoluteAddress address)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:359:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(TrustedImm32 imm, AbsoluteAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:364:17: error: 'RegisterID' has not been declared
+     void andPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:364:33: error: 'RegisterID' has not been declared
+     void andPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:369:17: error: 'TrustedImm32' has not been declared
+     void andPtr(TrustedImm32 imm, RegisterID srcDest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:369:35: error: 'RegisterID' has not been declared
+     void andPtr(TrustedImm32 imm, RegisterID srcDest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:369:10: error: 'void JSC::MacroAssembler::andPtr(int, int)' cannot be overloaded
+     void andPtr(TrustedImm32 imm, RegisterID srcDest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:364:10: error: with 'void JSC::MacroAssembler::andPtr(int, int)'
+     void andPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:374:17: error: 'RegisterID' has not been declared
+     void negPtr(RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:16: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID src, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:32: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID src, RegisterID dest)
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:384:16: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID op1, RegisterID op2, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:384:32: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID op1, RegisterID op2, RegisterID dest)
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:384:48: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID op1, RegisterID op2, RegisterID dest)
+                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:389:16: error: 'TrustedImmPtr' has not been declared
+     void orPtr(TrustedImmPtr imm, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:389:35: error: 'RegisterID' has not been declared
+     void orPtr(TrustedImmPtr imm, RegisterID dest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:389:10: error: 'void JSC::MacroAssembler::orPtr(int, int)' cannot be overloaded
+     void orPtr(TrustedImmPtr imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:10: error: with 'void JSC::MacroAssembler::orPtr(int, int)'
+     void orPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:394:16: error: 'TrustedImm32' has not been declared
+     void orPtr(TrustedImm32 imm, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:394:34: error: 'RegisterID' has not been declared
+     void orPtr(TrustedImm32 imm, RegisterID dest)
+                                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:394:10: error: 'void JSC::MacroAssembler::orPtr(int, int)' cannot be overloaded
+     void orPtr(TrustedImm32 imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:10: error: with 'void JSC::MacroAssembler::orPtr(int, int)'
+     void orPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:17: error: 'RegisterID' has not been declared
+     void subPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:33: error: 'RegisterID' has not been declared
+     void subPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:404:17: error: 'TrustedImm32' has not been declared
+     void subPtr(TrustedImm32 imm, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:404:35: error: 'RegisterID' has not been declared
+     void subPtr(TrustedImm32 imm, RegisterID dest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:404:10: error: 'void JSC::MacroAssembler::subPtr(int, int)' cannot be overloaded
+     void subPtr(TrustedImm32 imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:10: error: with 'void JSC::MacroAssembler::subPtr(int, int)'
+     void subPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:409:17: error: 'TrustedImmPtr' has not been declared
+     void subPtr(TrustedImmPtr imm, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:409:36: error: 'RegisterID' has not been declared
+     void subPtr(TrustedImmPtr imm, RegisterID dest)
+                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:409:10: error: 'void JSC::MacroAssembler::subPtr(int, int)' cannot be overloaded
+     void subPtr(TrustedImmPtr imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:10: error: with 'void JSC::MacroAssembler::subPtr(int, int)'
+     void subPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:414:17: error: 'RegisterID' has not been declared
+     void xorPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:414:33: error: 'RegisterID' has not been declared
+     void xorPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:419:17: error: 'TrustedImm32' has not been declared
+     void xorPtr(TrustedImm32 imm, RegisterID srcDest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:419:35: error: 'RegisterID' has not been declared
+     void xorPtr(TrustedImm32 imm, RegisterID srcDest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:419:10: error: 'void JSC::MacroAssembler::xorPtr(int, int)' cannot be overloaded
+     void xorPtr(TrustedImm32 imm, RegisterID srcDest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:414:10: error: with 'void JSC::MacroAssembler::xorPtr(int, int)'
+     void xorPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:425:18: error: 'ImplicitAddress' has not been declared
+     void loadPtr(ImplicitAddress address, RegisterID dest)
+                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:425:43: error: 'RegisterID' has not been declared
+     void loadPtr(ImplicitAddress address, RegisterID dest)
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:430:18: error: 'BaseIndex' has not been declared
+     void loadPtr(BaseIndex address, RegisterID dest)
+                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:430:37: error: 'RegisterID' has not been declared
+     void loadPtr(BaseIndex address, RegisterID dest)
+                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:430:10: error: 'void JSC::MacroAssembler::loadPtr(int, int)' cannot be overloaded
+     void loadPtr(BaseIndex address, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:425:10: error: with 'void JSC::MacroAssembler::loadPtr(int, int)'
+     void loadPtr(ImplicitAddress address, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:435:39: error: 'RegisterID' has not been declared
+     void loadPtr(const void* address, RegisterID dest)
+                                       ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:440:5: error: 'DataLabel32' does not name a type
+     DataLabel32 loadPtrWithAddressOffsetPatch(Address address, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:445:5: error: 'DataLabelCompact' does not name a type
+     DataLabelCompact loadPtrWithCompactAddressOffsetPatch(Address address, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:450:15: error: 'ImmPtr' has not been declared
+     void move(ImmPtr imm, RegisterID dest)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:450:27: error: 'RegisterID' has not been declared
+     void move(ImmPtr imm, RegisterID dest)
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:21: error: 'RelationalCondition' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:47: error: 'RegisterID' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:64: error: 'TrustedImm32' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:84: error: 'RegisterID' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                                                                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:19: error: 'RegisterID' has not been declared
+     void storePtr(RegisterID src, ImplicitAddress address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:35: error: 'ImplicitAddress' has not been declared
+     void storePtr(RegisterID src, ImplicitAddress address)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:465:19: error: 'RegisterID' has not been declared
+     void storePtr(RegisterID src, BaseIndex address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:465:35: error: 'BaseIndex' has not been declared
+     void storePtr(RegisterID src, BaseIndex address)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:465:10: error: 'void JSC::MacroAssembler::storePtr(int, int)' cannot be overloaded
+     void storePtr(RegisterID src, BaseIndex address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:10: error: with 'void JSC::MacroAssembler::storePtr(int, int)'
+     void storePtr(RegisterID src, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:470:19: error: 'RegisterID' has not been declared
+     void storePtr(RegisterID src, void* address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:475:19: error: 'TrustedImmPtr' has not been declared
+     void storePtr(TrustedImmPtr imm, ImplicitAddress address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:475:38: error: 'ImplicitAddress' has not been declared
+     void storePtr(TrustedImmPtr imm, ImplicitAddress address)
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:475:10: error: 'void JSC::MacroAssembler::storePtr(int, int)' cannot be overloaded
+     void storePtr(TrustedImmPtr imm, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:10: error: with 'void JSC::MacroAssembler::storePtr(int, int)'
+     void storePtr(RegisterID src, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:480:19: error: 'ImmPtr' has not been declared
+     void storePtr(ImmPtr imm, Address address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:480:31: error: 'Address' has not been declared
+     void storePtr(ImmPtr imm, Address address)
+                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:480:10: error: 'void JSC::MacroAssembler::storePtr(int, int)' cannot be overloaded
+     void storePtr(ImmPtr imm, Address address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:10: error: with 'void JSC::MacroAssembler::storePtr(int, int)'
+     void storePtr(RegisterID src, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:485:19: error: 'TrustedImmPtr' has not been declared
+     void storePtr(TrustedImmPtr imm, void* address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:485:10: error: 'void JSC::MacroAssembler::storePtr(int, void*)' cannot be overloaded
+     void storePtr(TrustedImmPtr imm, void* address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:470:10: error: with 'void JSC::MacroAssembler::storePtr(int, void*)'
+     void storePtr(RegisterID src, void* address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:490:5: error: 'DataLabel32' does not name a type
+     DataLabel32 storePtrWithAddressOffsetPatch(RegisterID src, Address address)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:495:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:500:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, TrustedImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:505:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, ImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:510:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, Address right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:515:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, Address left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:520:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, AbsoluteAddress left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:525:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, Address left, TrustedImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:530:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, AbsoluteAddress left, TrustedImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:535:5: error: 'Jump' does not name a type
+     Jump branchSubPtr(ResultCondition cond, RegisterID src, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:540:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, RegisterID reg, RegisterID mask)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:545:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, RegisterID reg, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:550:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, Address address, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:555:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, BaseIndex address, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:560:5: error: 'Jump' does not name a type
+     Jump branchAddPtr(ResultCondition cond, RegisterID src, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:565:5: error: 'Jump' does not name a type
+     Jump branchSubPtr(ResultCondition cond, TrustedImm32 imm, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:569:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::branchTest8;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:570:5: error: 'Jump' does not name a type
+     Jump branchTest8(ResultCondition cond, ExtendedAddress address, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::pop()':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:158:42: error: 'TrustedImm32' was not declared in this scope
+         addPtr(TrustedImm32(sizeof(void*)), stackPointerRegister);
+                                          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:158:45: error: 'stackPointerRegister' was not declared in this scope
+         addPtr(TrustedImm32(sizeof(void*)), stackPointerRegister);
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::peek(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:163:25: error: 'stackPointerRegister' was not declared in this scope
+         loadPtr(Address(stackPointerRegister, (index * sizeof(void*))), dest);
+                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:163:70: error: 'Address' was not declared in this scope
+         loadPtr(Address(stackPointerRegister, (index * sizeof(void*))), dest);
+                                                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::poke(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:173:43: error: 'addressForPoke' was not declared in this scope
+         storePtr(src, addressForPoke(index));
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::poke(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:178:44: error: 'addressForPoke' was not declared in this scope
+         store32(value, addressForPoke(index));
+                                            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:178:45: error: 'store32' was not declared in this scope
+         store32(value, addressForPoke(index));
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::poke(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:183:43: error: 'addressForPoke' was not declared in this scope
+         storePtr(imm, addressForPoke(index));
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branchPtr(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:214:33: error: no matching function for call to 'JSC::MacroAssembler::branchPtr(int&, int&, int&)'
+         branchPtr(cond, op1, imm).linkTo(target, this);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:214:33: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note: void JSC::MacroAssembler::branchPtr(int, int, int, int)
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branchPtr(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:218:33: error: no matching function for call to 'JSC::MacroAssembler::branchPtr(int&, int&, int&)'
+         branchPtr(cond, op1, imm).linkTo(target, this);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:218:33: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note: void JSC::MacroAssembler::branchPtr(int, int, int, int)
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:223:32: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, op1, op2).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:223:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:228:32: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, op1, imm).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:228:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:233:32: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, op1, imm).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:233:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:238:35: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, left, right).linkTo(target, this);
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:238:35: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branchTestPtr(int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:253:32: error: no matching function for call to 'JSC::MacroAssembler::branchTestPtr(int&, int&)'
+         branchTestPtr(cond, reg).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:253:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:10: note: void JSC::MacroAssembler::branchTestPtr(int, int, int)
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:10: note:   candidate expects 3 arguments, 2 provided
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::jump(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:287:14: error: no matching function for call to 'JSC::MacroAssembler::jump()'
+         jump().linkTo(target, this);
+              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:287:14: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:285:10: note: void JSC::MacroAssembler::jump(int)
+     void jump(Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:285:10: note:   candidate expects 1 argument, 0 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:331:24: error: 'add32' was not declared in this scope
+         add32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:336:24: error: 'add32' was not declared in this scope
+         add32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:341:24: error: 'add32' was not declared in this scope
+         add32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:346:27: error: 'add32' was not declared in this scope
+         add32(imm, srcDest);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:351:31: error: 'TrustedImm32' was not declared in this scope
+         add32(TrustedImm32(imm), dest);
+                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:351:38: error: 'add32' was not declared in this scope
+         add32(TrustedImm32(imm), dest);
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:356:29: error: 'add32' was not declared in this scope
+         add32(imm, src, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:361:27: error: 'add32' was not declared in this scope
+         add32(imm, address);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::andPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:366:24: error: 'and32' was not declared in this scope
+         and32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::andPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:371:27: error: 'and32' was not declared in this scope
+         and32(imm, srcDest);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::negPtr(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:376:19: error: 'neg32' was not declared in this scope
+         neg32(dest);
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:381:23: error: 'or32' was not declared in this scope
+         or32(src, dest);
+                       ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:386:28: error: 'or32' was not declared in this scope
+         or32(op1, op2, dest);
+                            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:391:30: error: 'TrustedImm32' was not declared in this scope
+         or32(TrustedImm32(imm), dest);
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:391:37: error: 'or32' was not declared in this scope
+         or32(TrustedImm32(imm), dest);
+                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:396:23: error: 'or32' was not declared in this scope
+         or32(imm, dest);
+                       ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::subPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:401:24: error: 'sub32' was not declared in this scope
+         sub32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::subPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:406:24: error: 'sub32' was not declared in this scope
+         sub32(imm, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::subPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:411:31: error: 'TrustedImm32' was not declared in this scope
+         sub32(TrustedImm32(imm), dest);
+                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:411:38: error: 'sub32' was not declared in this scope
+         sub32(TrustedImm32(imm), dest);
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::xorPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:416:24: error: 'xor32' was not declared in this scope
+         xor32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::xorPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:421:27: error: 'xor32' was not declared in this scope
+         xor32(imm, srcDest);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::loadPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:427:29: error: 'load32' was not declared in this scope
+         load32(address, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::loadPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:432:29: error: 'load32' was not declared in this scope
+         load32(address, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::loadPtr(const void*, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:437:29: error: 'load32' was not declared in this scope
+         load32(address, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::move(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:452:24: error: request for member 'asTrustedImmPtr' in 'imm', which is of non-class type 'int'
+         move(Imm32(imm.asTrustedImmPtr()), dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:452:41: error: 'Imm32' was not declared in this scope
+         move(Imm32(imm.asTrustedImmPtr()), dest);
+                                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::comparePtr(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:457:42: error: 'compare32' was not declared in this scope
+         compare32(cond, left, right, dest);
+                                          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:462:29: error: 'store32' was not declared in this scope
+         store32(src, address);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:467:29: error: 'store32' was not declared in this scope
+         store32(src, address);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, void*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:472:29: error: 'store32' was not declared in this scope
+         store32(src, address);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:477:33: error: 'TrustedImm32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:477:43: error: 'store32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:482:27: error: request for member 'asTrustedImmPtr' in 'imm', which is of non-class type 'int'
+         store32(Imm32(imm.asTrustedImmPtr()), address);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:482:44: error: 'Imm32' was not declared in this scope
+         store32(Imm32(imm.asTrustedImmPtr()), address);
+                                            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:482:54: error: 'store32' was not declared in this scope
+         store32(Imm32(imm.asTrustedImmPtr()), address);
+                                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, void*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:487:33: error: 'TrustedImm32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:487:43: error: 'store32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                           ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: At global scope:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:117:48: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery inGPR(MacroAssembler::RegisterID gpr, DataFormat dataFormat)
+                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:134:54: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery uint32InGPR(MacroAssembler::RegisterID gpr)
+                                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:143:49: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery inPair(MacroAssembler::RegisterID tagGPR, MacroAssembler::RegisterID payloadGPR)
+                                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:143:84: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery inPair(MacroAssembler::RegisterID tagGPR, MacroAssembler::RegisterID payloadGPR)
+                                                                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:153:48: error: 'JSC::MacroAssembler::FPRegisterID' has not been declared
+     static ValueRecovery inFPR(MacroAssembler::FPRegisterID fpr)
+                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:239:5: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::RegisterID gpr() const
+     ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:246:5: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::RegisterID tagGPR() const
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:252:5: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::RegisterID payloadGPR() const
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:259:5: error: 'FPRegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::FPRegisterID fpr() const
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:348:9: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+         MacroAssembler::RegisterID gpr;
+         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:349:9: error: 'FPRegisterID' in 'class JSC::MacroAssembler' does not name a type
+         MacroAssembler::FPRegisterID fpr;
+         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:352:13: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+             MacroAssembler::RegisterID tagGPR;
+             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:353:13: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+             MacroAssembler::RegisterID payloadGPR;
+             ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::inGPR(int, JSC::DataFormat)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:130:25: error: 'union JSC::ValueRecovery::<anonymous>' has no member named 'gpr'
+         result.m_source.gpr = gpr;
+                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::uint32InGPR(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:138:25: error: 'union JSC::ValueRecovery::<anonymous>' has no member named 'gpr'
+         result.m_source.gpr = gpr;
+                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::inPair(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:147:30: error: 'struct JSC::ValueRecovery::<anonymous union>::<anonymous>' has no member named 'tagGPR'
+         result.m_source.pair.tagGPR = tagGPR;
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:148:30: error: 'struct JSC::ValueRecovery::<anonymous union>::<anonymous>' has no member named 'payloadGPR'
+         result.m_source.pair.payloadGPR = payloadGPR;
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::inFPR(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:157:25: error: 'union JSC::ValueRecovery::<anonymous>' has no member named 'fpr'
+         result.m_source.fpr = fpr;
+                         ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In member function 'void JSC::ValueRecovery::dump(WTF::PrintStream&) const':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:296:37: error: 'gpr' was not declared in this scope
+             out.printf("%%r%d", gpr());
+                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:308:38: error: 'fpr' was not declared in this scope
+             out.printf("%%fr%d", fpr());
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:312:53: error: 'tagGPR' was not declared in this scope
+             out.printf("pair(%%r%d, %%r%d)", tagGPR(), payloadGPR());
+                                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:312:67: error: 'payloadGPR' was not declared in this scope
+             out.printf("pair(%%r%d, %%r%d)", tagGPR(), payloadGPR());
+                                                                   ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/PossiblyNull.h:29:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/FastMalloc.h:25,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/config.h:69,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:26:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h: In instantiation of 'TO WTF::bitwise_cast(FROM) [with TO = JSC::JSCell*; FROM = int]':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter/Register.h:196:47:   required from here
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/Assertions.h:328:47: error: size of array is negative
+ #define COMPILE_ASSERT(exp, name) typedef int dummy##name [(exp) ? 1 : -1]
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h:134:5: note: in expansion of macro 'COMPILE_ASSERT'
+     COMPILE_ASSERT(sizeof(TO) == sizeof(FROM), WTF_bitwise_cast_sizeof_casted_types_is_equal);
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h: In instantiation of 'TO WTF::bitwise_cast(FROM) [with TO = JSC::Instruction*; FROM = int]':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter/CallFrame.h:154:81:   required from here
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/Assertions.h:328:47: error: size of array is negative
+ #define COMPILE_ASSERT(exp, name) typedef int dummy##name [(exp) ? 1 : -1]
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h:134:5: note: in expansion of macro 'COMPILE_ASSERT'
+     COMPILE_ASSERT(sizeof(TO) == sizeof(FROM), WTF_bitwise_cast_sizeof_casted_types_is_equal);
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h: In instantiation of 'TO WTF::bitwise_cast(FROM) [with TO = int; FROM = JSC::Instruction*]':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter/CallFrame.h:158:75:   required from here
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/Assertions.h:328:47: error: size of array is negative
+ #define COMPILE_ASSERT(exp, name) typedef int dummy##name [(exp) ? 1 : -1]
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h:134:5: note: in expansion of macro 'COMPILE_ASSERT'
+     COMPILE_ASSERT(sizeof(TO) == sizeof(FROM), WTF_bitwise_cast_sizeof_casted_types_is_equal);
+     ^
+make[3]: *** [obj/release/LLIntOffsetsExtractor.o] Error 1
+make[2]: *** [sub-LLIntOffsetsExtractor-pro-make_for_qmake] Error 2
+make[1]: *** [sub-Source-JavaScriptCore-JavaScriptCore-pro-recursive_qmake] Error 2
+make: *** [incremental] Error 2
+error: Bad exit status from /var/tmp/rpm-tmp.4qkqYc (%build)
+    Bad exit status from /var/tmp/rpm-tmp.4qkqYc (%build)
