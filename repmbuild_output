@@ -1,0 +1,1692 @@
+[root@localhost (aarch64) qtwebkit19]# rpmbuild --rebuild qtwebkit-2.3.3-3.fc19.src.rpm 
+Installing qtwebkit-2.3.3-3.fc19.src.rpm
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.3u1QsE
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd /root/rpmbuild/BUILD
++ rm -rf webkit-qtwebkit-23
++ /usr/bin/xz -dc /root/rpmbuild/SOURCES/qtwebkit-2.3.3.tar.xz
++ /usr/bin/tar -xf -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd webkit-qtwebkit-23
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ echo 'Patch #1 (webkit-qtwebkit-2.2-tp1-pluginpath.patch):'
+Patch #1 (webkit-qtwebkit-2.2-tp1-pluginpath.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/webkit-qtwebkit-2.2-tp1-pluginpath.patch
++ /usr/bin/patch -p1 -b --suffix .pluginpath --fuzz=0
+patching file Source/WebCore/plugins/PluginDatabase.cpp
+Hunk #1 succeeded at 384 (offset 4 lines).
+Hunk #2 succeeded at 394 (offset 4 lines).
++ echo 'Patch #3 (qtwebkit-2.3-debuginfo.patch):'
+Patch #3 (qtwebkit-2.3-debuginfo.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/qtwebkit-2.3-debuginfo.patch
++ /usr/bin/patch -p1 -b --suffix .debuginfo --fuzz=0
+patching file Source/WebCore/WebCore.pri
++ echo 'Patch #4 (qtwebkit-2.3-save_memory.patch):'
+Patch #4 (qtwebkit-2.3-save_memory.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/qtwebkit-2.3-save_memory.patch
++ /usr/bin/patch -p1 -b --suffix .save_memory --fuzz=0
+patching file Source/WebCore/WebCore.pri
+Hunk #1 succeeded at 346 (offset 10 lines).
++ echo 'Patch #102 (0002-Texmap-GTK-The-poster-circle-doesn-t-appear.patch):'
+Patch #102 (0002-Texmap-GTK-The-poster-circle-doesn-t-appear.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0002-Texmap-GTK-The-poster-circle-doesn-t-appear.patch
++ /usr/bin/patch -p1 -b --suffix .0002 --fuzz=0
+patching file Source/WebCore/ChangeLog
+patching file Source/WebCore/platform/graphics/texmap/TextureMapperLayer.cpp
++ echo 'Patch #103 (0003-Qt-Tiled-backing-store-not-clipped-to-frame-or-visib.patch):'
+Patch #103 (0003-Qt-Tiled-backing-store-not-clipped-to-frame-or-visib.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0003-Qt-Tiled-backing-store-not-clipped-to-frame-or-visib.patch
++ /usr/bin/patch -p1 -b --suffix .0003 --fuzz=0
+patching file Source/WebKit/qt/Api/qwebframe.cpp
+patching file Source/WebKit/qt/ChangeLog
++ echo 'Patch #104 (0004-Qt-Images-scaled-poorly-on-composited-canvas.patch):'
+Patch #104 (0004-Qt-Images-scaled-poorly-on-composited-canvas.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0004-Qt-Images-scaled-poorly-on-composited-canvas.patch
++ /usr/bin/patch -p1 -b --suffix .0004 --fuzz=0
+patching file Source/WebKit/qt/Api/qwebframe.cpp
+patching file Source/WebKit/qt/ChangeLog
++ echo 'Patch #105 (0005-Port-of-r118587-to-TextBreakIteratorQt.cpp.patch):'
+Patch #105 (0005-Port-of-r118587-to-TextBreakIteratorQt.cpp.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0005-Port-of-r118587-to-TextBreakIteratorQt.cpp.patch
++ /usr/bin/patch -p1 -b --suffix .0005 --fuzz=0
+patching file Source/WebCore/platform/text/qt/TextBreakIteratorQt.cpp
++ echo 'Patch #106 (0006-JSC-ARM-traditional-failing-on-Octane-NavierStokes-t.patch):'
+Patch #106 (0006-JSC-ARM-traditional-failing-on-Octane-NavierStokes-t.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0006-JSC-ARM-traditional-failing-on-Octane-NavierStokes-t.patch
++ /usr/bin/patch -p1 -b --suffix .0006 --fuzz=0
+patching file Source/JavaScriptCore/ChangeLog
+patching file Source/JavaScriptCore/assembler/ARMAssembler.h
++ echo 'Patch #107 (0007-Correct-range-used-for-Emoji-checks.patch):'
+Patch #107 (0007-Correct-range-used-for-Emoji-checks.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0007-Correct-range-used-for-Emoji-checks.patch
++ /usr/bin/patch -p1 -b --suffix .0007 --fuzz=0
+patching file Source/WebCore/ChangeLog
+patching file Source/WebCore/platform/graphics/Font.cpp
++ echo 'Patch #108 (0008-Qt-RepaintRequested-signal-sometimes-not-emitted.patch):'
+Patch #108 (0008-Qt-RepaintRequested-signal-sometimes-not-emitted.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0008-Qt-RepaintRequested-signal-sometimes-not-emitted.patch
++ /usr/bin/patch -p1 -b --suffix .0008 --fuzz=0
+patching file Source/WebKit/qt/WebCoreSupport/PageClientQt.cpp
++ echo 'Patch #109 (0009-TexMap-Remove-ParentChange-in-TextureMapperLayer.patch):'
+Patch #109 (0009-TexMap-Remove-ParentChange-in-TextureMapperLayer.patch):
++ /usr/bin/cat /root/rpmbuild/SOURCES/0009-TexMap-Remove-ParentChange-in-TextureMapperLayer.patch
++ /usr/bin/patch -p1 -b --suffix .0009 --fuzz=0
+patching file Source/WebCore/ChangeLog
+patching file Source/WebCore/platform/graphics/texmap/GraphicsLayerTextureMapper.cpp
+patching file Source/WebCore/platform/graphics/texmap/GraphicsLayerTextureMapper.h
+patching file Source/WebCore/platform/graphics/texmap/TextureMapperLayer.cpp
+patching file Source/WebCore/platform/graphics/texmap/TextureMapperLayer.h
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.WdN1dA
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd webkit-qtwebkit-23
++ PATH=/usr/lib64/qt4/bin:/sbin:/bin:/usr/sbin:/usr/bin
++ export PATH
+++ pwd
++ QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake
++ export QMAKEPATH
++ QTDIR=/usr/lib64/qt4
++ export QTDIR
++ mkdir -p aarch64-redhat-linux-gnu
++ pushd aarch64-redhat-linux-gnu
+~/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu ~/rpmbuild/BUILD/webkit-qtwebkit-23
+++ pwd
++ WEBKITOUTPUTDIR=/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu
++ export WEBKITOUTPUTDIR
++ ../Tools/Scripts/build-webkit --qt --no-webkit2 --release '--qmakearg=CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1' --makeargs= --system-malloc
+
+Unable to determine current SVN revision in /root/rpmbuild/BUILD/webkit-qtwebkit-23 at /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/Scripts/VCSUtils.pm line 396.
+Calling 'QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake qmake CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build /root/rpmbuild/BUILD/webkit-qtwebkit-23/WebKit.pro' in /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release
+
+Project MESSAGE: Building WebKit2 with Qt versions older than 5.0 is not supported. Disabling WebKit2.
+Project MESSAGE: Read http://www.mail-archive.com/webkit-qt@lists.webkit.org/msg01674.html for more information.
+Calling 'make  -j4 incremental' in /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release
+
+/bin/make -f Makefile qmake_all && /bin/make -f Makefile
+make[1]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release'
+cd Source/JavaScriptCore/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/JavaScriptCore.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.JavaScriptCore
+cd Source/ThirdParty/ANGLE/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/ANGLE.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.ANGLE
+cd Source/WebCore/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/WebCore.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.WebCore
+cd Source/WTF/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/WTF.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.WTF
+cd Source/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/QtWebKit.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.QtWebKit
+cd Source/WebKit/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/WebKit1.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.WebKit1
+cd Tools/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/Tools.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.Tools
+cd Source/JavaScriptCore/ && /bin/make -f Makefile.JavaScriptCore qmake
+cd Source/ThirdParty/ANGLE/ && /bin/make -f Makefile.ANGLE qmake
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/LLIntOffsetsExtractor.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.LLIntOffsetsExtractor
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/ThirdParty/ANGLE'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/DerivedSources.pri CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.ANGLE.DerivedSources
+/bin/make -f Makefile.ANGLE.DerivedSources
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/ThirdParty/ANGLE'
+flex --noline --nounistd --outfile=generated/glslang_lex.cpp /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/src/compiler/glslang.l
+flex --noline --nounistd --outfile=generated/Tokenizer_lex.cpp /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/src/compiler/preprocessor/new/Tokenizer.l
+bison --no-lines --skeleton=yacc.c --defines=generated/glslang_tab.h --output=generated/glslang_tab.cpp /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/src/compiler/glslang.y
+bison --no-lines --skeleton=yacc.c --defines=generated/ExpressionParser_tab.h --output=generated/ExpressionParser_tab.cpp /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/src/compiler/preprocessor/new/ExpressionParser.y
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/jsc.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.jsc
+cd Source/WebCore/ && /bin/make -f Makefile.WebCore qmake
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/ThirdParty/ANGLE'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/ThirdParty/ANGLE/Target.pri CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.ANGLE.Target
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebCore'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/DerivedSources.pri CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.WebCore.DerivedSources
+/bin/make -f Makefile.LLIntOffsetsExtractor
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/ThirdParty/ANGLE'
+/bin/make -f Makefile.jsc qmake
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore'
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore'
+ruby /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/offlineasm/generate_offset_extractor.rb /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter.asm LLIntDesiredOffsets.h
+offlineasm: Parsing /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter.asm and creating offset extractor LLIntDesiredOffsets.h.
+offlineasm: Including file /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter64.asm
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore'
+cd Source/ && /bin/make -f Makefile.QtWebKit qmake
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/api.pri CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.QtWebKit.api
+Project MESSAGE: Running perl /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake/syncqt-4.8 -outdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release -separate-module QtWebKit:/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source:WebKit/qt/Api
+mkdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/include
+mkdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/include/Qt
+mkdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/include/QtWebKit
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qgraphicswebview.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebdatabase.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebelement.h (3)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebframe.h (3)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebhistory.h (3)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebhistoryinterface.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebinspector.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebkitglobal.h (1)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebkitplatformplugin.h (10)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebkitversion.h (1)
+offlineasm: Including file /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LowLevelInterpreter32_64.asm
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebpage.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebpluginfactory.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebscriptworld.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebsecurityorigin.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebsettings.h (2)
+header created for /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/Api/qwebview.h (2)
+header (master) created for QtWebKit
+headers.pri file created for QtWebKit
+cd Tools/ && /bin/make -f Makefile.Tools qmake
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools'
+cd QtTestBrowser/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/QtTestBrowser/QtTestBrowser.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.Tools
+/bin/make -f Makefile.WebCore.DerivedSources
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebCore'
+perl -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/make_names.pl --tags /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/mathml/mathtags.in --attrs /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/mathml/mathattrs.in --extraDefines "ENABLE_3D_RENDERING=1 ENABLE_ACCELERATED_2D_CANVAS=0 ENABLE_ANIMATION_API=0 ENABLE_BATTERY_STATUS=0 ENABLE_BLOB=1 ENABLE_CHANNEL_MESSAGING=1 ENABLE_CSP_NEXT=0 ENABLE_CSS3_BACKGROUND=0 ENABLE_CSS3_CONDITIONAL_RULES=0 ENABLE_CSS3_TEXT=0 ENABLE_CSS_BOX_DECORATION_BREAK=1 ENABLE_CSS_COMPOSITING=1 ENABLE_CSS_EXCLUSIONS=1 ENABLE_CSS_FILTERS=1 ENABLE_CSS_GRID_LAYOUT=0 ENABLE_CSS_HIERARCHIES=0 ENABLE_CSS_IMAGE_ORIENTATION=0 ENABLE_CSS_IMAGE_RESOLUTION=0 ENABLE_CSS_IMAGE_SET=1 ENABLE_CSS_REGIONS=1 ENABLE_CSS_SHADERS=1 ENABLE_CSS_STICKY_POSITION=1 ENABLE_CSS_VARIABLES=0 ENABLE_DASHBOARD_SUPPORT=0 ENABLE_DATAGRID=0 ENABLE_DATALIST_ELEMENT=1 ENABLE_DATA_TRANSFER_ITEMS=0 ENABLE_DETAILS_ELEMENT=1 ENABLE_DEVICE_ORIENTATION=1 ENABLE_DIRECTORY_UPLOAD=0 ENABLE_DOWNLOAD_ATTRIBUTE=0 ENABLE_FAST_MOBILE_SCROLLING=1 ENABLE_FILE_SYSTEM=0 ENABLE_FILTERS=1 ENABLE_FTPDIR=1 ENABLE_FULLSCREEN_API=0 ENABLE_GAMEPAD=0 ENABLE_GEOLOCATION=1 ENABLE_GESTURE_EVENTS=1 ENABLE_HIGH_DPI_CANVAS=0 ENABLE_ICONDATABASE=1 ENABLE_IFRAME_SEAMLESS=1 ENABLE_INDEXED_DATABASE=0 ENABLE_INPUT_SPEECH=0 ENABLE_INPUT_TYPE_COLOR=1 ENABLE_INPUT_TYPE_DATE=0 ENABLE_INPUT_TYPE_DATETIME=0 ENABLE_INPUT_TYPE_DATETIMELOCAL=0 ENABLE_INPUT_TYPE_MONTH=0 ENABLE_INPUT_TYPE_TIME=0 ENABLE_INPUT_TYPE_WEEK=0 ENABLE_INSPECTOR=1 ENABLE_INSPECTOR_SERVER=1 ENABLE_JAVASCRIPT_DEBUGGER=1 ENABLE_LEGACY_CSS_VENDOR_PREFIXES=0 ENABLE_LEGACY_NOTIFICATIONS=1 ENABLE_LEGACY_VENDOR_PREFIXES=1 ENABLE_LEGACY_VIEWPORT_ADAPTION=1 ENABLE_LINK_PREFETCH=0 ENABLE_LINK_PRERENDER=0 ENABLE_MATHML=0 ENABLE_MEDIA_SOURCE=0 ENABLE_MEDIA_STATISTICS=0 ENABLE_MEDIA_STREAM=0 ENABLE_METER_ELEMENT=1 ENABLE_MHTML=1 ENABLE_MICRODATA=0 ENABLE_MUTATION_OBSERVERS=1 ENABLE_NAVIGATOR_CONTENT_UTILS=0 ENABLE_NETSCAPE_PLUGIN_API=1 ENABLE_NETWORK_INFO=0 ENABLE_NOTIFICATIONS=1 ENABLE_ORIENTATION_EVENTS=1 ENABLE_PAGE_VISIBILITY_API=1 ENABLE_PROGRESS_ELEMENT=1 ENABLE_PROXIMITY_EVENTS=0 ENABLE_QUOTA=0 ENABLE_REQUEST_ANIMATION_FRAME=1 ENABLE_RESOLUTION_MEDIA_QUERY=1 ENABLE_SCRIPTED_SPEECH=0 ENABLE_SHADOW_DOM=0 ENABLE_SHARED_WORKERS=1 ENABLE_SMOOTH_SCROLLING=1 ENABLE_SQL_DATABASE=1 ENABLE_STYLE_SCOPED=0 ENABLE_SVG=1 ENABLE_SVG_DOM_OBJC_BINDINGS=0 ENABLE_SVG_FONTS=0 ENABLE_TEXT_AUTOSIZING=0 ENABLE_TEXT_NOTIFICATIONS_ONLY=0 ENABLE_TOUCH_ADJUSTMENT=1 ENABLE_TOUCH_EVENTS=1 ENABLE_TOUCH_ICON_LOADING=0 ENABLE_VIBRATION=0 ENABLE_VIDEO=1 ENABLE_VIDEO_TRACK=0 ENABLE_WEBGL=1 ENABLE_WEB_AUDIO=0 ENABLE_WEB_SOCKETS=1 ENABLE_WEB_TIMING=1 ENABLE_WORKERS=1 ENABLE_XHR_TIMEOUT=1 ENABLE_XSLT=1 HAVE_FONTCONFIG=1 HAVE_LIBWEBP=1 HAVE_QQUICK1=1 HAVE_QSTYLE=1 HAVE_QTPRINTSUPPORT=1 HAVE_QTTESTLIB=1 HAVE_SQLITE3=1 PLUGIN_ARCHITECTURE_UNSUPPORTED=1 USE_SYSTEM_MALLOC=1 WTF_USE_3D_GRAPHICS=1 WTF_USE_GSTREAMER=1 WTF_USE_LIBXML2=1 WTF_USE_QT4_UNICODE=1 WTF_USE_TILED_BACKING_STORE=1 WTF_USE_ZLIB=1 HAVE_LIBWEBP=1 USE_SYSTEM_MALLOC=1" --preprocessor "/usr/lib64/qt4/bin/moc -E" --factory --wrapperFactory --outputDir generated
+cd WebKit/qt/declarative/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/declarative/declarative.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.declarative
+cd WebKit/qt/examples/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/examples/examples.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile
+perl -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/make_names.pl --tags /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/svgtags.in --attrs /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/svgattrs.in --extraDefines "ENABLE_3D_RENDERING=1 ENABLE_ACCELERATED_2D_CANVAS=0 ENABLE_ANIMATION_API=0 ENABLE_BATTERY_STATUS=0 ENABLE_BLOB=1 ENABLE_CHANNEL_MESSAGING=1 ENABLE_CSP_NEXT=0 ENABLE_CSS3_BACKGROUND=0 ENABLE_CSS3_CONDITIONAL_RULES=0 ENABLE_CSS3_TEXT=0 ENABLE_CSS_BOX_DECORATION_BREAK=1 ENABLE_CSS_COMPOSITING=1 ENABLE_CSS_EXCLUSIONS=1 ENABLE_CSS_FILTERS=1 ENABLE_CSS_GRID_LAYOUT=0 ENABLE_CSS_HIERARCHIES=0 ENABLE_CSS_IMAGE_ORIENTATION=0 ENABLE_CSS_IMAGE_RESOLUTION=0 ENABLE_CSS_IMAGE_SET=1 ENABLE_CSS_REGIONS=1 ENABLE_CSS_SHADERS=1 ENABLE_CSS_STICKY_POSITION=1 ENABLE_CSS_VARIABLES=0 ENABLE_DASHBOARD_SUPPORT=0 ENABLE_DATAGRID=0 ENABLE_DATALIST_ELEMENT=1 ENABLE_DATA_TRANSFER_ITEMS=0 ENABLE_DETAILS_ELEMENT=1 ENABLE_DEVICE_ORIENTATION=1 ENABLE_DIRECTORY_UPLOAD=0 ENABLE_DOWNLOAD_ATTRIBUTE=0 ENABLE_FAST_MOBILE_SCROLLING=1 ENABLE_FILE_SYSTEM=0 ENABLE_FILTERS=1 ENABLE_FTPDIR=1 ENABLE_FULLSCREEN_API=0 ENABLE_GAMEPAD=0 ENABLE_GEOLOCATION=1 ENABLE_GESTURE_EVENTS=1 ENABLE_HIGH_DPI_CANVAS=0 ENABLE_ICONDATABASE=1 ENABLE_IFRAME_SEAMLESS=1 ENABLE_INDEXED_DATABASE=0 ENABLE_INPUT_SPEECH=0 ENABLE_INPUT_TYPE_COLOR=1 ENABLE_INPUT_TYPE_DATE=0 ENABLE_INPUT_TYPE_DATETIME=0 ENABLE_INPUT_TYPE_DATETIMELOCAL=0 ENABLE_INPUT_TYPE_MONTH=0 ENABLE_INPUT_TYPE_TIME=0 ENABLE_INPUT_TYPE_WEEK=0 ENABLE_INSPECTOR=1 ENABLE_INSPECTOR_SERVER=1 ENABLE_JAVASCRIPT_DEBUGGER=1 ENABLE_LEGACY_CSS_VENDOR_PREFIXES=0 ENABLE_LEGACY_NOTIFICATIONS=1 ENABLE_LEGACY_VENDOR_PREFIXES=1 ENABLE_LEGACY_VIEWPORT_ADAPTION=1 ENABLE_LINK_PREFETCH=0 ENABLE_LINK_PRERENDER=0 ENABLE_MATHML=0 ENABLE_MEDIA_SOURCE=0 ENABLE_MEDIA_STATISTICS=0 ENABLE_MEDIA_STREAM=0 ENABLE_METER_ELEMENT=1 ENABLE_MHTML=1 ENABLE_MICRODATA=0 ENABLE_MUTATION_OBSERVERS=1 ENABLE_NAVIGATOR_CONTENT_UTILS=0 ENABLE_NETSCAPE_PLUGIN_API=1 ENABLE_NETWORK_INFO=0 ENABLE_NOTIFICATIONS=1 ENABLE_ORIENTATION_EVENTS=1 ENABLE_PAGE_VISIBILITY_API=1 ENABLE_PROGRESS_ELEMENT=1 ENABLE_PROXIMITY_EVENTS=0 ENABLE_QUOTA=0 ENABLE_REQUEST_ANIMATION_FRAME=1 ENABLE_RESOLUTION_MEDIA_QUERY=1 ENABLE_SCRIPTED_SPEECH=0 ENABLE_SHADOW_DOM=0 ENABLE_SHARED_WORKERS=1 ENABLE_SMOOTH_SCROLLING=1 ENABLE_SQL_DATABASE=1 ENABLE_STYLE_SCOPED=0 ENABLE_SVG=1 ENABLE_SVG_DOM_OBJC_BINDINGS=0 ENABLE_SVG_FONTS=0 ENABLE_TEXT_AUTOSIZING=0 ENABLE_TEXT_NOTIFICATIONS_ONLY=0 ENABLE_TOUCH_ADJUSTMENT=1 ENABLE_TOUCH_EVENTS=1 ENABLE_TOUCH_ICON_LOADING=0 ENABLE_VIBRATION=0 ENABLE_VIDEO=1 ENABLE_VIDEO_TRACK=0 ENABLE_WEBGL=1 ENABLE_WEB_AUDIO=0 ENABLE_WEB_SOCKETS=1 ENABLE_WEB_TIMING=1 ENABLE_WORKERS=1 ENABLE_XHR_TIMEOUT=1 ENABLE_XSLT=1 HAVE_FONTCONFIG=1 HAVE_LIBWEBP=1 HAVE_QQUICK1=1 HAVE_QSTYLE=1 HAVE_QTPRINTSUPPORT=1 HAVE_QTTESTLIB=1 HAVE_SQLITE3=1 PLUGIN_ARCHITECTURE_UNSUPPORTED=1 USE_SYSTEM_MALLOC=1 WTF_USE_3D_GRAPHICS=1 WTF_USE_GSTREAMER=1 WTF_USE_LIBXML2=1 WTF_USE_QT4_UNICODE=1 WTF_USE_TILED_BACKING_STORE=1 WTF_USE_ZLIB=1 HAVE_LIBWEBP=1 USE_SYSTEM_MALLOC=1" --preprocessor "/usr/lib64/qt4/bin/moc -E" --factory --wrapperFactory --outputDir generated
+/bin/make -f Makefile.QtWebKit.api qmake
+perl -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/make_names.pl --attrs /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/xlinkattrs.in --preprocessor "/usr/lib64/qt4/bin/moc -E" --outputDir generated
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source'
+Project MESSAGE: Running perl /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake/syncqt-4.8 -outdir /root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release -separate-module QtWebKit:/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source:WebKit/qt/Api
+perl -ne "print " /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSPropertyNames.in /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/SVGCSSPropertyNames.in > generated/CSSPropertyNames.in && cd generated && perl -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/makeprop.pl --defines "LANGUAGE_JAVASCRIPT=1 ENABLE_3D_RENDERING=1 ENABLE_BLOB=1 ENABLE_CHANNEL_MESSAGING=1 ENABLE_CSS_BOX_DECORATION_BREAK=1 ENABLE_CSS_COMPOSITING=1 ENABLE_CSS_EXCLUSIONS=1 ENABLE_CSS_FILTERS=1 ENABLE_CSS_IMAGE_SET=1 ENABLE_CSS_REGIONS=1 ENABLE_CSS_SHADERS=1 ENABLE_CSS_STICKY_POSITION=1 ENABLE_DATALIST_ELEMENT=1 ENABLE_DETAILS_ELEMENT=1 ENABLE_DEVICE_ORIENTATION=1 ENABLE_FAST_MOBILE_SCROLLING=1 ENABLE_FILTERS=1 ENABLE_FTPDIR=1 ENABLE_GEOLOCATION=1 ENABLE_GESTURE_EVENTS=1 ENABLE_ICONDATABASE=1 ENABLE_IFRAME_SEAMLESS=1 ENABLE_INPUT_TYPE_COLOR=1 ENABLE_INSPECTOR=1 ENABLE_INSPECTOR_SERVER=1 ENABLE_JAVASCRIPT_DEBUGGER=1 ENABLE_LEGACY_NOTIFICATIONS=1 ENABLE_LEGACY_VENDOR_PREFIXES=1 ENABLE_LEGACY_VIEWPORT_ADAPTION=1 ENABLE_METER_ELEMENT=1 ENABLE_MHTML=1 ENABLE_MUTATION_OBSERVERS=1 ENABLE_NETSCAPE_PLUGIN_API=1 ENABLE_NOTIFICATIONS=1 ENABLE_ORIENTATION_EVENTS=1 ENABLE_PAGE_VISIBILITY_API=1 ENABLE_PROGRESS_ELEMENT=1 ENABLE_REQUEST_ANIMATION_FRAME=1 ENABLE_RESOLUTION_MEDIA_QUERY=1 ENABLE_SHARED_WORKERS=1 ENABLE_SMOOTH_SCROLLING=1 ENABLE_SQL_DATABASE=1 ENABLE_SVG=1 ENABLE_TOUCH_ADJUSTMENT=1 ENABLE_TOUCH_EVENTS=1 ENABLE_VIDEO=1 ENABLE_WEBGL=1 ENABLE_WEB_SOCKETS=1 ENABLE_WEB_TIMING=1 ENABLE_WORKERS=1 ENABLE_XHR_TIMEOUT=1 ENABLE_XSLT=1" --preprocessor "/usr/lib64/qt4/bin/moc -E" /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSPropertyNames.in && rm -f CSSPropertyNames.in CSSPropertyNames.gperf
+perl -ne "print " /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSValueKeywords.in /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/SVGCSSValueKeywords.in > generated/CSSValueKeywords.in && cd generated && perl -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/makevalues.pl --defines "LANGUAGE_JAVASCRIPT=1 ENABLE_3D_RENDERING=1 ENABLE_BLOB=1 ENABLE_CHANNEL_MESSAGING=1 ENABLE_CSS_BOX_DECORATION_BREAK=1 ENABLE_CSS_COMPOSITING=1 ENABLE_CSS_EXCLUSIONS=1 ENABLE_CSS_FILTERS=1 ENABLE_CSS_IMAGE_SET=1 ENABLE_CSS_REGIONS=1 ENABLE_CSS_SHADERS=1 ENABLE_CSS_STICKY_POSITION=1 ENABLE_DATALIST_ELEMENT=1 ENABLE_DETAILS_ELEMENT=1 ENABLE_DEVICE_ORIENTATION=1 ENABLE_FAST_MOBILE_SCROLLING=1 ENABLE_FILTERS=1 ENABLE_FTPDIR=1 ENABLE_GEOLOCATION=1 ENABLE_GESTURE_EVENTS=1 ENABLE_ICONDATABASE=1 ENABLE_IFRAME_SEAMLESS=1 ENABLE_INPUT_TYPE_COLOR=1 ENABLE_INSPECTOR=1 ENABLE_INSPECTOR_SERVER=1 ENABLE_JAVASCRIPT_DEBUGGER=1 ENABLE_LEGACY_NOTIFICATIONS=1 ENABLE_LEGACY_VENDOR_PREFIXES=1 ENABLE_LEGACY_VIEWPORT_ADAPTION=1 ENABLE_METER_ELEMENT=1 ENABLE_MHTML=1 ENABLE_MUTATION_OBSERVERS=1 ENABLE_NETSCAPE_PLUGIN_API=1 ENABLE_NOTIFICATIONS=1 ENABLE_ORIENTATION_EVENTS=1 ENABLE_PAGE_VISIBILITY_API=1 ENABLE_PROGRESS_ELEMENT=1 ENABLE_REQUEST_ANIMATION_FRAME=1 ENABLE_RESOLUTION_MEDIA_QUERY=1 ENABLE_SHARED_WORKERS=1 ENABLE_SMOOTH_SCROLLING=1 ENABLE_SQL_DATABASE=1 ENABLE_SVG=1 ENABLE_TOUCH_ADJUSTMENT=1 ENABLE_TOUCH_EVENTS=1 ENABLE_VIDEO=1 ENABLE_WEBGL=1 ENABLE_WEB_SOCKETS=1 ENABLE_WEB_TIMING=1 ENABLE_WORKERS=1 ENABLE_XHR_TIMEOUT=1 ENABLE_XSLT=1" --preprocessor "/usr/lib64/qt4/bin/moc -E" /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSValueKeywords.in && rm -f CSSValueKeywords.in CSSValueKeywords.gperf
+cd DumpRenderTree/qt/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/DumpRenderTree/qt/DumpRenderTree.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.Tools.DumpRenderTree
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source'
+cd WebKit/qt/declarative/ && /bin/make -f Makefile.declarative qmake
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebKit/qt/declarative'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebKit/qt/declarative/public.pri CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.declarative.public
+cat /dev/null > generated/idl_files.tmp 
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DOMFileSystem.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DOMFileSystemSync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DOMWindowFileSystem.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DirectoryEntry.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DirectoryEntrySync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DirectoryReader.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/DirectoryReaderSync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/EntriesCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/Entry.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/EntryArray.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/EntryArraySync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/EntryCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/EntrySync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/ErrorCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/FileCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/FileEntry.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/FileEntrySync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/FileSystemCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/FileWriter.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/FileWriterCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/Metadata.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/MetadataCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/filesystem/WorkerContextFileSystem.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/geolocation/Geolocation.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/geolocation/Geoposition.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/geolocation/NavigatorGeolocation.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/geolocation/PositionCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/geolocation/PositionError.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/geolocation/PositionErrorCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/DOMWindowIndexedDatabase.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBAny.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBCursor.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBDatabaseException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBDatabase.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBFactory.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBIndex.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBKey.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBKeyRange.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBObjectStore.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBRequest.idl>> generated/idl_files.tmp
+/bin/make -f Makefile.declarative.public qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/IDBTransaction.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/indexeddb/WorkerContextIndexedDatabase.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/notifications/DOMWindowNotifications.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/notifications/Notification.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/notifications/NotificationCenter.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/notifications/NotificationPermissionCallback.idl>> generated/idl_files.tmp
+cd DumpRenderTree/qt/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/DumpRenderTree/qt/ImageDiff.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.Tools.ImageDiff
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/notifications/WorkerContextNotifications.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/quota/DOMWindowQuota.idl>> generated/idl_files.tmp
+make[4]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebKit/qt/declarative'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/quota/StorageInfo.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/quota/StorageInfoErrorCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/quota/StorageInfoQuotaCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/quota/StorageInfoUsageCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioBuffer.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioBufferCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioBufferSourceNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/ChannelMergerNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/ChannelSplitterNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioDestinationNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioGain.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/GainNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioListener.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/PannerNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioParam.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioProcessingEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AudioSourceNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/BiquadFilterNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/ConvolverNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/DelayNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/DOMWindowWebAudio.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/DynamicsCompressorNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/ScriptProcessorNode.idl>> generated/idl_files.tmp
+cd DumpRenderTree/qt/TestNetscapePlugin/ && QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/DumpRenderTree/qt/TestNetscapePlugin/TestNetscapePlugin.pro CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.Tools
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/MediaStreamAudioSourceNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/OfflineAudioCompletionEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/OscillatorNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/AnalyserNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/WaveShaperNode.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webaudio/WaveTable.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/DOMWindowWebDatabase.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/Database.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/DatabaseCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/DatabaseSync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLError.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLResultSet.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLResultSetRowList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLStatementCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLStatementErrorCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLTransaction.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLTransactionCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLTransactionErrorCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLTransactionSync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/SQLTransactionSyncCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/webdatabase/WorkerContextWebDatabase.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/websockets/CloseEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/websockets/DOMWindowWebSocket.idl>> generated/idl_files.tmp
+make[4]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebKit/qt/declarative'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/websockets/WebSocket.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/Modules/websockets/WorkerContextWebSocket.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/Counter.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSCharsetRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSFontFaceRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSImportRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSMediaRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSPageRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSPrimitiveValue.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSRuleList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSStyleDeclaration.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSStyleRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSStyleSheet.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSValue.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/CSSValueList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/MediaList.idl>> generated/idl_files.tmp
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebKit/qt/declarative'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/MediaQueryList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/Rect.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/RGBColor.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/StyleMedia.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/StyleSheet.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/StyleSheetList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSFilterValue.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSKeyframeRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSKeyframesRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSMatrix.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSMixFunctionValue.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSRegionRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSTransformValue.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/css/WebKitCSSViewportRule.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Attr.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/BeforeLoadEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/CharacterData.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/ClientRect.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/ClientRectList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Clipboard.idl>> generated/idl_files.tmp
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source'
+python /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/generate-inspector-protocol-version -o generated/InspectorProtocolVersion.h /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/Inspector.json
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/CDATASection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Comment.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/CompositionEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/CustomEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DataTransferItem.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DataTransferItemList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DeviceMotionEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DeviceOrientationEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DocumentFragment.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Document.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DocumentType.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DOMCoreException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DOMError.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DOMImplementation.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DOMStringList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DOMStringMap.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Element.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Entity.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/EntityReference.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/ErrorEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Event.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/EventException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/EventTarget.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/HashChangeEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/KeyboardEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MouseEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MessageChannel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MessageEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MessagePort.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MutationCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MutationEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MutationObserver.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/MutationRecord.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/NamedNodeMap.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Node.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/NodeFilter.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/NodeIterator.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/NodeList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Notation.idl>> generated/idl_files.tmp
+python /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/CodeGeneratorInspector.py /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/Inspector.json --output_h_dir generated --output_cpp_dir generated
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/OverflowEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/PageTransitionEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/PopStateEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/ProcessingInstruction.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/ProgressEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/PropertyNodeList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/RangeException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Range.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/RequestAnimationFrameCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/ShadowRoot.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/StringCallback.idl>> generated/idl_files.tmp
+cd QtTestBrowser/ && /bin/make -f Makefile.Tools qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Text.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/TextEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/Touch.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/TouchEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/TouchList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/TreeWalker.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/UIEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/WebKitAnimationEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/WebKitNamedFlow.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/DOMNamedFlowCollection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/WebKitTransitionEvent.idl>> generated/idl_files.tmp
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/QtTestBrowser'
+QMAKEPATH=/root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/qmake /usr/lib64/qt4/bin/qmake CONFIG+=production_build DEFINES+=HAVE_LIBWEBP=1 CONFIG+=no_webkit2 DEFINES+=USE_SYSTEM_MALLOC=1 CONFIG+=release CONFIG-=debug CONFIG+=production_build -o Makefile.Tools /root/rpmbuild/BUILD/webkit-qtwebkit-23/Tools/QtTestBrowser/QtTestBrowser.pro
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/dom/WheelEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/Blob.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/File.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/FileError.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/FileException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/FileList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/FileReader.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/fileapi/FileReaderSync.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/ArrayBufferView.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/ArrayBuffer.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/DataView.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Int8Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Float32Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Float64Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/CanvasGradient.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Int32Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/CanvasPattern.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/CanvasRenderingContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/CanvasRenderingContext2D.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/EXTTextureFilterAnisotropic.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/OESStandardDerivatives.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/OESTextureFloat.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/OESVertexArrayObject.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/OESElementIndexUint.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLActiveInfo.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLBuffer.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLCompressedTextureS3TC.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLContextAttributes.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLContextEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLDebugRendererInfo.idl>> generated/idl_files.tmp
+cd DumpRenderTree/qt/ && /bin/make -f Makefile.Tools.DumpRenderTree qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLDebugShaders.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLDepthTexture.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLFramebuffer.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLLoseContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLProgram.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLRenderbuffer.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLRenderingContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLShader.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLShaderPrecisionFormat.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Int16Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLTexture.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLUniformLocation.idl>> generated/idl_files.tmp
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/DumpRenderTree/qt'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/WebGLVertexArrayObjectOES.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Uint8Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Uint8ClampedArray.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Uint32Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/canvas/Uint16Array.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/DOMFormData.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/DOMSettableTokenList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/DOMTokenList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/DOMURL.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLAllCollection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLAudioElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLAnchorElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLAppletElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLAreaElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLBaseElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLBaseFontElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLBodyElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLBRElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLButtonElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLCanvasElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLCollection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDataListElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDetailsElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDialogElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDirectoryElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDivElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDListElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLDocument.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLEmbedElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLFieldSetElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLFontElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLFormControlsCollection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLFormElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLFrameElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLFrameSetElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLHeadElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLHeadingElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLHRElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLHtmlElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLIFrameElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLImageElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLInputElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLKeygenElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLLabelElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLLegendElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLLIElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLLinkElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLMapElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLMarqueeElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLMediaElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLMenuElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLMetaElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLMeterElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLModElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLObjectElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLOListElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLOptGroupElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLOptionElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLOptionsCollection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLOutputElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLParagraphElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLParamElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLPreElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLProgressElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLPropertiesCollection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLQuoteElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLScriptElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLSelectElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLSourceElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLSpanElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLStyleElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTableCaptionElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTableCellElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTableColElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTableElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTableRowElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTableSectionElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTextAreaElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTitleElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLTrackElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLUListElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLUnknownElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/HTMLVideoElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/ImageData.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/MediaController.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/MediaError.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/MicroDataItemValue.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/RadioNodeList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/TextMetrics.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/TimeRanges.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/ValidityState.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/VoidCallback.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/shadow/HTMLContentElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/html/shadow/HTMLShadowElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/InjectedScriptHost.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/InspectorFrontendHost.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/JavaScriptCallFrame.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/ScriptProfile.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/ScriptProfileNode.idl>> generated/idl_files.tmp
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/QtTestBrowser'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/loader/appcache/DOMApplicationCache.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/BarInfo.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Console.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Coordinates.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Crypto.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/DOMSecurityPolicy.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/DOMSelection.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/DOMWindow.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/EventSource.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/History.idl>> generated/idl_files.tmp
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/QtTestBrowser'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Location.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/MemoryInfo.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Navigator.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Performance.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/PerformanceEntry.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/PerformanceEntryList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/PerformanceNavigation.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/PerformanceResourceTiming.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/PerformanceTiming.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/Screen.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/SpeechInputEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/SpeechInputResult.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/SpeechInputResultList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/WebKitAnimation.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/WebKitAnimationList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/WebKitPoint.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/page/WorkerNavigator.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/plugins/DOMPlugin.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/plugins/DOMMimeType.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/plugins/DOMPluginArray.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/plugins/DOMMimeTypeArray.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/storage/Storage.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/storage/StorageEvent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/testing/Internals.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/testing/InternalSettings.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/testing/MallocStatistics.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/AbstractWorker.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/DedicatedWorkerContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/SharedWorker.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/SharedWorkerContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/Worker.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/WorkerContext.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/workers/WorkerLocation.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/DOMParser.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XMLHttpRequest.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XMLHttpRequestException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XMLHttpRequestProgressEvent.idl>> generated/idl_files.tmp
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/DumpRenderTree/qt'
+cp -f /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/inspector/front-end/InspectorBackendCommands.qrc generated/InspectorBackendCommands.qrc
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XMLHttpRequestUpload.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XMLSerializer.idl>> generated/idl_files.tmp
+cd Source/WTF/ && /bin/make -f Makefile.WTF qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XPathNSResolver.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XPathException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XPathExpression.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XPathResult.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XPathEvaluator.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/xml/XSLTProcessor.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAltGlyphDefElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAltGlyphElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAltGlyphItemElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAngle.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimateColorElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimateMotionElement.idl>> generated/idl_files.tmp
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WTF'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedAngle.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedBoolean.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedEnumeration.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedInteger.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedLength.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedLengthList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedNumber.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedNumberList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedPreserveAspectRatio.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedRect.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedString.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimatedTransformList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimateElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimateTransformElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGAnimationElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGCircleElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGClipPathElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGColor.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGComponentTransferFunctionElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGCursorElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGDefsElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGDescElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGDocument.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGElementInstance.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGElementInstanceList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGEllipseElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGException.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEBlendElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEColorMatrixElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEComponentTransferElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFECompositeElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEConvolveMatrixElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEDiffuseLightingElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEDisplacementMapElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEDistantLightElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEDropShadowElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEFloodElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEFuncAElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEFuncBElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEFuncGElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEFuncRElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEGaussianBlurElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEImageElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEMergeElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEMergeNodeElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEMorphologyElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEOffsetElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFEPointLightElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFESpecularLightingElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFESpotLightElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFETileElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFETurbulenceElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFilterElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFontElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFontFaceElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFontFaceFormatElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFontFaceNameElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFontFaceSrcElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGFontFaceUriElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGForeignObjectElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGGElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGGlyphElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGGlyphRefElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGGradientElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGHKernElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGImageElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGLength.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGLengthList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGLinearGradientElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGLineElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGMarkerElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGMaskElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGMatrix.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGMetadataElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGMissingGlyphElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGMPathElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGNumber.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGNumberList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPaint.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegArcAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegArcRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegClosePath.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoCubicAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoCubicRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoCubicSmoothAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoCubicSmoothRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoQuadraticAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoQuadraticRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoQuadraticSmoothAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegCurvetoQuadraticSmoothRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSeg.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegLinetoAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegLinetoHorizontalAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegLinetoHorizontalRel.idl>> generated/idl_files.tmp
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/QtTestBrowser'
+cd DumpRenderTree/qt/ && /bin/make -f Makefile.Tools.ImageDiff qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegLinetoRel.idl>> generated/idl_files.tmp
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WTF'
+cd Source/WebKit/ && /bin/make -f Makefile.WebKit1 qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegLinetoVerticalAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegLinetoVerticalRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegMovetoAbs.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPathSegMovetoRel.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPatternElement.idl>> generated/idl_files.tmp
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/DumpRenderTree/qt'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPoint.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPointList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPolygonElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPolylineElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGPreserveAspectRatio.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGRadialGradientElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGRectElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGRect.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGRenderingIntent.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGScriptElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGSetElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGStopElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGStringList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGStyleElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGSVGElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGSwitchElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGSymbolElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTextContentElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTextElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTextPathElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTextPositioningElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTitleElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTransform.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTransformList.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTRefElement.idl>> generated/idl_files.tmp
+make[2]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebKit'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGTSpanElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGUnitTypes.idl>> generated/idl_files.tmp
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/DumpRenderTree/qt'
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGUseElement.idl>> generated/idl_files.tmp
+cd DumpRenderTree/qt/TestNetscapePlugin/ && /bin/make -f Makefile.Tools qmake
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGViewElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGVKernElement.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGViewSpec.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGZoomAndPan.idl>> generated/idl_files.tmp
+echo /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/svg/SVGZoomEvent.idl>> generated/idl_files.tmp
+perl -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts/preprocess-idls.pl --defines "LANGUAGE_JAVASCRIPT=1 ENABLE_3D_RENDERING=1 ENABLE_BLOB=1 ENABLE_CHANNEL_MESSAGING=1 ENABLE_CSS_BOX_DECORATION_BREAK=1 ENABLE_CSS_COMPOSITING=1 ENABLE_CSS_EXCLUSIONS=1 ENABLE_CSS_FILTERS=1 ENABLE_CSS_IMAGE_SET=1 ENABLE_CSS_REGIONS=1 ENABLE_CSS_SHADERS=1 ENABLE_CSS_STICKY_POSITION=1 ENABLE_DATALIST_ELEMENT=1 ENABLE_DETAILS_ELEMENT=1 ENABLE_DEVICE_ORIENTATION=1 ENABLE_FAST_MOBILE_SCROLLING=1 ENABLE_FILTERS=1 ENABLE_FTPDIR=1 ENABLE_GEOLOCATION=1 ENABLE_GESTURE_EVENTS=1 ENABLE_ICONDATABASE=1 ENABLE_IFRAME_SEAMLESS=1 ENABLE_INPUT_TYPE_COLOR=1 ENABLE_INSPECTOR=1 ENABLE_INSPECTOR_SERVER=1 ENABLE_JAVASCRIPT_DEBUGGER=1 ENABLE_LEGACY_NOTIFICATIONS=1 ENABLE_LEGACY_VENDOR_PREFIXES=1 ENABLE_LEGACY_VIEWPORT_ADAPTION=1 ENABLE_METER_ELEMENT=1 ENABLE_MHTML=1 ENABLE_MUTATION_OBSERVERS=1 ENABLE_NETSCAPE_PLUGIN_API=1 ENABLE_NOTIFICATIONS=1 ENABLE_ORIENTATION_EVENTS=1 ENABLE_PAGE_VISIBILITY_API=1 ENABLE_PROGRESS_ELEMENT=1 ENABLE_REQUEST_ANIMATION_FRAME=1 ENABLE_RESOLUTION_MEDIA_QUERY=1 ENABLE_SHARED_WORKERS=1 ENABLE_SMOOTH_SCROLLING=1 ENABLE_SQL_DATABASE=1 ENABLE_SVG=1 ENABLE_TOUCH_ADJUSTMENT=1 ENABLE_TOUCH_EVENTS=1 ENABLE_VIDEO=1 ENABLE_WEBGL=1 ENABLE_WEB_SOCKETS=1 ENABLE_WEB_TIMING=1 ENABLE_WORKERS=1 ENABLE_XHR_TIMEOUT=1 ENABLE_XSLT=1" --idlFilesList generated/idl_files.tmp --supplementalDependencyFile generated/supplemental_dependency.tmp --idlAttributesFile /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts/IDLAttributes.txt --preprocessor "/usr/lib64/qt4/bin/moc -E"
+make[3]: Entering directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/DumpRenderTree/qt/TestNetscapePlugin'
+moc: fatal: Not a git repository (or any of the parent directories): .git: No such file
+No document found at /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WebCore/bindings/scripts/IDLParser.pm line 168.
+make[3]: *** [generated/supplemental_dependency.tmp] Error 1
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebCore'
+make[2]: *** [sub-DerivedSources-pri-make_for_qmake] Error 2
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebCore'
+make[1]: *** [sub-Source-WebCore-WebCore-pro-recursive_qmake] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools/DumpRenderTree/qt/TestNetscapePlugin'
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Tools'
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/WebKit'
+offlineasm: offset extractor LLIntDesiredOffsets.h successfully generated.
+g++ -c -Wall -Wextra -Wreturn-type -fno-strict-aliasing -Wchar-subscripts -Wformat-security -Wreturn-type -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-switch-enum -Wundef -Wmissing-noreturn -Winit-self -fpermissive -pipe -Wno-c++0x-compat -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -grecord-gcc-switches -fno-stack-protector -O2 -DENABLE_3D_RENDERING=1 -DENABLE_ACCELERATED_2D_CANVAS=0 -DENABLE_ANIMATION_API=0 -DENABLE_BATTERY_STATUS=0 -DENABLE_BLOB=1 -DENABLE_CHANNEL_MESSAGING=1 -DENABLE_CSP_NEXT=0 -DENABLE_CSS3_BACKGROUND=0 -DENABLE_CSS3_CONDITIONAL_RULES=0 -DENABLE_CSS3_TEXT=0 -DENABLE_CSS_BOX_DECORATION_BREAK=1 -DENABLE_CSS_COMPOSITING=1 -DENABLE_CSS_EXCLUSIONS=1 -DENABLE_CSS_FILTERS=1 -DENABLE_CSS_GRID_LAYOUT=0 -DENABLE_CSS_HIERARCHIES=0 -DENABLE_CSS_IMAGE_ORIENTATION=0 -DENABLE_CSS_IMAGE_RESOLUTION=0 -DENABLE_CSS_IMAGE_SET=1 -DENABLE_CSS_REGIONS=1 -DENABLE_CSS_SHADERS=1 -DENABLE_CSS_STICKY_POSITION=1 -DENABLE_CSS_VARIABLES=0 -DENABLE_DASHBOARD_SUPPORT=0 -DENABLE_DATAGRID=0 -DENABLE_DATALIST_ELEMENT=1 -DENABLE_DATA_TRANSFER_ITEMS=0 -DENABLE_DETAILS_ELEMENT=1 -DENABLE_DEVICE_ORIENTATION=1 -DENABLE_DIRECTORY_UPLOAD=0 -DENABLE_DOWNLOAD_ATTRIBUTE=0 -DENABLE_FAST_MOBILE_SCROLLING=1 -DENABLE_FILE_SYSTEM=0 -DENABLE_FILTERS=1 -DENABLE_FTPDIR=1 -DENABLE_FULLSCREEN_API=0 -DENABLE_GAMEPAD=0 -DENABLE_GEOLOCATION=1 -DENABLE_GESTURE_EVENTS=1 -DENABLE_HIGH_DPI_CANVAS=0 -DENABLE_ICONDATABASE=1 -DENABLE_IFRAME_SEAMLESS=1 -DENABLE_INDEXED_DATABASE=0 -DENABLE_INPUT_SPEECH=0 -DENABLE_INPUT_TYPE_COLOR=1 -DENABLE_INPUT_TYPE_DATE=0 -DENABLE_INPUT_TYPE_DATETIME=0 -DENABLE_INPUT_TYPE_DATETIMELOCAL=0 -DENABLE_INPUT_TYPE_MONTH=0 -DENABLE_INPUT_TYPE_TIME=0 -DENABLE_INPUT_TYPE_WEEK=0 -DENABLE_INSPECTOR=1 -DENABLE_INSPECTOR_SERVER=1 -DENABLE_JAVASCRIPT_DEBUGGER=1 -DENABLE_LEGACY_CSS_VENDOR_PREFIXES=0 -DENABLE_LEGACY_NOTIFICATIONS=1 -DENABLE_LEGACY_VENDOR_PREFIXES=1 -DENABLE_LEGACY_VIEWPORT_ADAPTION=1 -DENABLE_LINK_PREFETCH=0 -DENABLE_LINK_PRERENDER=0 -DENABLE_MATHML=0 -DENABLE_MEDIA_SOURCE=0 -DENABLE_MEDIA_STATISTICS=0 -DENABLE_MEDIA_STREAM=0 -DENABLE_METER_ELEMENT=1 -DENABLE_MHTML=1 -DENABLE_MICRODATA=0 -DENABLE_MUTATION_OBSERVERS=1 -DENABLE_NAVIGATOR_CONTENT_UTILS=0 -DENABLE_NETSCAPE_PLUGIN_API=1 -DENABLE_NETWORK_INFO=0 -DENABLE_NOTIFICATIONS=1 -DENABLE_ORIENTATION_EVENTS=1 -DENABLE_PAGE_VISIBILITY_API=1 -DENABLE_PROGRESS_ELEMENT=1 -DENABLE_PROXIMITY_EVENTS=0 -DENABLE_QUOTA=0 -DENABLE_REQUEST_ANIMATION_FRAME=1 -DENABLE_RESOLUTION_MEDIA_QUERY=1 -DENABLE_SCRIPTED_SPEECH=0 -DENABLE_SHADOW_DOM=0 -DENABLE_SHARED_WORKERS=1 -DENABLE_SMOOTH_SCROLLING=1 -DENABLE_SQL_DATABASE=1 -DENABLE_STYLE_SCOPED=0 -DENABLE_SVG=1 -DENABLE_SVG_DOM_OBJC_BINDINGS=0 -DENABLE_SVG_FONTS=0 -DENABLE_TEXT_AUTOSIZING=0 -DENABLE_TEXT_NOTIFICATIONS_ONLY=0 -DENABLE_TOUCH_ADJUSTMENT=1 -DENABLE_TOUCH_EVENTS=1 -DENABLE_TOUCH_ICON_LOADING=0 -DENABLE_VIBRATION=0 -DENABLE_VIDEO=1 -DENABLE_VIDEO_TRACK=0 -DENABLE_WEBGL=1 -DENABLE_WEB_AUDIO=0 -DENABLE_WEB_SOCKETS=1 -DENABLE_WEB_TIMING=1 -DENABLE_WORKERS=1 -DENABLE_XHR_TIMEOUT=1 -DENABLE_XSLT=1 -DHAVE_FONTCONFIG=1 -DHAVE_LIBWEBP=1 -DHAVE_QQUICK1=1 -DHAVE_QSTYLE=1 -DHAVE_QTPRINTSUPPORT=1 -DHAVE_QTTESTLIB=1 -DHAVE_SQLITE3=1 -DPLUGIN_ARCHITECTURE_UNSUPPORTED=1 -DUSE_SYSTEM_MALLOC=1 -DWTF_USE_3D_GRAPHICS=1 -DWTF_USE_GSTREAMER=1 -DWTF_USE_LIBXML2=1 -DWTF_USE_QT4_UNICODE=1 -DWTF_USE_TILED_BACKING_STORE=1 -DWTF_USE_ZLIB=1 -DHAVE_LIBWEBP=1 -DUSE_SYSTEM_MALLOC=1 -DBUILDING_QT__=1 -DNDEBUG -I/usr/lib64/qt4/mkspecs/linux-g++-aarch64 -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore -I. -I/usr/include -I/usr/include/QtCore -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecompiler -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/dfg -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/debugger -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/disassembler -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/jit -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/parser -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/profiler -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/tools -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/yarr -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/API -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/ForwardingHeaders -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore/generated -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/include -I/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore -I. -o obj/release/LLIntOffsetsExtractor.o /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:62:2: error: #error "The MacroAssembler is not supported on this platform."
+ #error "The MacroAssembler is not supported on this platform."
+  ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopiedBlock.h:33:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopiedAllocator.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopiedSpace.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/CopyVisitor.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/heap/Heap.h:26,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/WriteBarrier.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/PropertyStorage.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/IndexingHeader.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/ArrayConventions.h:24,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSArray.h:24,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ArrayProfile.h:29,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:28:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h: In constructor 'JSC::JSValue::JSValue(JSC::JSCell*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h:198:57: warning: cast from 'JSC::JSCell*' to 'int32_t {aka int}' loses precision [-fpermissive]
+         u.asBits.payload = reinterpret_cast<int32_t>(ptr);
+                                                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h: In constructor 'JSC::JSValue::JSValue(const JSC::JSCell*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/runtime/JSValueInlines.h:207:78: warning: cast from 'JSC::JSCell*' to 'int32_t {aka int}' loses precision [-fpermissive]
+         u.asBits.payload = reinterpret_cast<int32_t>(const_cast<JSCell*>(ptr));
+                                                                              ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: At global scope:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:67:50: error: expected class-name before '{' token
+ class MacroAssembler : public MacroAssemblerBase {
+                                                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:70:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::pop;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:71:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::jump;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:72:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::branch32;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:73:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::move;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:161:15: error: 'RegisterID' has not been declared
+     void peek(RegisterID dest, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:166:5: error: 'Address' does not name a type
+     Address addressForPoke(int index)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:171:15: error: 'RegisterID' has not been declared
+     void poke(RegisterID src, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:176:15: error: 'TrustedImm32' has not been declared
+     void poke(TrustedImm32 value, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:176:10: error: 'void JSC::MacroAssembler::poke(int, int)' cannot be overloaded
+     void poke(TrustedImm32 value, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:171:10: error: with 'void JSC::MacroAssembler::poke(int, int)'
+     void poke(RegisterID src, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:181:15: error: 'TrustedImmPtr' has not been declared
+     void poke(TrustedImmPtr imm, int index = 0)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:181:10: error: 'void JSC::MacroAssembler::poke(int, int)' cannot be overloaded
+     void poke(TrustedImmPtr imm, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:171:10: error: with 'void JSC::MacroAssembler::poke(int, int)'
+     void poke(RegisterID src, int index = 0)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:20: error: 'RelationalCondition' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:46: error: 'RegisterID' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:62: error: 'TrustedImmPtr' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:81: error: 'Label' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+                                                                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:20: error: 'RelationalCondition' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:46: error: 'RegisterID' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:62: error: 'ImmPtr' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:74: error: 'Label' has not been declared
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+                                                                          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:216:10: error: 'void JSC::MacroAssembler::branchPtr(int, int, int, int)' cannot be overloaded
+     void branchPtr(RelationalCondition cond, RegisterID op1, ImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: error: with 'void JSC::MacroAssembler::branchPtr(int, int, int, int)'
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:61: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:77: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+                                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:61: error: 'TrustedImm32' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:79: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+                                                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:226:10: error: 'void JSC::MacroAssembler::branch32(int, int, int, int)' cannot be overloaded
+     void branch32(RelationalCondition cond, RegisterID op1, TrustedImm32 imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: error: with 'void JSC::MacroAssembler::branch32(int, int, int, int)'
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:61: error: 'Imm32' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:72: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+                                                                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:231:10: error: 'void JSC::MacroAssembler::branch32(int, int, int, int)' cannot be overloaded
+     void branch32(RelationalCondition cond, RegisterID op1, Imm32 imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: error: with 'void JSC::MacroAssembler::branch32(int, int, int, int)'
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:19: error: 'RelationalCondition' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:45: error: 'RegisterID' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:62: error: 'Address' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:77: error: 'Label' has not been declared
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+                                                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:236:10: error: 'void JSC::MacroAssembler::branch32(int, int, int, int)' cannot be overloaded
+     void branch32(RelationalCondition cond, RegisterID left, Address right, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: error: with 'void JSC::MacroAssembler::branch32(int, int, int, int)'
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:241:5: error: 'Jump' does not name a type
+     Jump branch32(RelationalCondition cond, TrustedImm32 left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:246:5: error: 'Jump' does not name a type
+     Jump branch32(RelationalCondition cond, Imm32 left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:24: error: 'ResultCondition' has not been declared
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:46: error: 'RegisterID' has not been declared
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:62: error: 'Label' has not been declared
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+                                                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:257:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranchPtr(RelationalCondition cond, Address left, TrustedImmPtr right = TrustedImmPtr(0))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:262:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranchPtrWithPatch(RelationalCondition cond, Address left, DataLabelPtr& dataLabel, TrustedImmPtr initialRightValue = TrustedImmPtr(0))
+     ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:267:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableJump()
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:272:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranchTest32(ResultCondition cond, RegisterID reg, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:279:5: error: 'PatchableJump' does not name a type
+     PatchableJump patchableBranch32(RelationalCondition cond, RegisterID reg, TrustedImm32 imm)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:285:15: error: 'Label' has not been declared
+     void jump(Label target)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:292:12: error: 'RelationalCondition' does not name a type
+     static RelationalCondition commute(RelationalCondition condition)
+            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:17: error: 'Address' has not been declared
+     void addPtr(Address src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:30: error: 'RegisterID' has not been declared
+     void addPtr(Address src, RegisterID dest)
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:334:17: error: 'AbsoluteAddress' has not been declared
+     void addPtr(AbsoluteAddress src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:334:38: error: 'RegisterID' has not been declared
+     void addPtr(AbsoluteAddress src, RegisterID dest)
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:334:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(AbsoluteAddress src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:339:17: error: 'RegisterID' has not been declared
+     void addPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:339:33: error: 'RegisterID' has not been declared
+     void addPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:339:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:344:17: error: 'TrustedImm32' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID srcDest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:344:35: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID srcDest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:344:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(TrustedImm32 imm, RegisterID srcDest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:349:17: error: 'TrustedImmPtr' has not been declared
+     void addPtr(TrustedImmPtr imm, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:349:36: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImmPtr imm, RegisterID dest)
+                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:349:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(TrustedImmPtr imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:354:17: error: 'TrustedImm32' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:354:35: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID src, RegisterID dest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:354:51: error: 'RegisterID' has not been declared
+     void addPtr(TrustedImm32 imm, RegisterID src, RegisterID dest)
+                                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:359:17: error: 'TrustedImm32' has not been declared
+     void addPtr(TrustedImm32 imm, AbsoluteAddress address)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:359:35: error: 'AbsoluteAddress' has not been declared
+     void addPtr(TrustedImm32 imm, AbsoluteAddress address)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:359:10: error: 'void JSC::MacroAssembler::addPtr(int, int)' cannot be overloaded
+     void addPtr(TrustedImm32 imm, AbsoluteAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:329:10: error: with 'void JSC::MacroAssembler::addPtr(int, int)'
+     void addPtr(Address src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:364:17: error: 'RegisterID' has not been declared
+     void andPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:364:33: error: 'RegisterID' has not been declared
+     void andPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:369:17: error: 'TrustedImm32' has not been declared
+     void andPtr(TrustedImm32 imm, RegisterID srcDest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:369:35: error: 'RegisterID' has not been declared
+     void andPtr(TrustedImm32 imm, RegisterID srcDest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:369:10: error: 'void JSC::MacroAssembler::andPtr(int, int)' cannot be overloaded
+     void andPtr(TrustedImm32 imm, RegisterID srcDest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:364:10: error: with 'void JSC::MacroAssembler::andPtr(int, int)'
+     void andPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:374:17: error: 'RegisterID' has not been declared
+     void negPtr(RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:16: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID src, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:32: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID src, RegisterID dest)
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:384:16: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID op1, RegisterID op2, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:384:32: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID op1, RegisterID op2, RegisterID dest)
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:384:48: error: 'RegisterID' has not been declared
+     void orPtr(RegisterID op1, RegisterID op2, RegisterID dest)
+                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:389:16: error: 'TrustedImmPtr' has not been declared
+     void orPtr(TrustedImmPtr imm, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:389:35: error: 'RegisterID' has not been declared
+     void orPtr(TrustedImmPtr imm, RegisterID dest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:389:10: error: 'void JSC::MacroAssembler::orPtr(int, int)' cannot be overloaded
+     void orPtr(TrustedImmPtr imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:10: error: with 'void JSC::MacroAssembler::orPtr(int, int)'
+     void orPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:394:16: error: 'TrustedImm32' has not been declared
+     void orPtr(TrustedImm32 imm, RegisterID dest)
+                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:394:34: error: 'RegisterID' has not been declared
+     void orPtr(TrustedImm32 imm, RegisterID dest)
+                                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:394:10: error: 'void JSC::MacroAssembler::orPtr(int, int)' cannot be overloaded
+     void orPtr(TrustedImm32 imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:379:10: error: with 'void JSC::MacroAssembler::orPtr(int, int)'
+     void orPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:17: error: 'RegisterID' has not been declared
+     void subPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:33: error: 'RegisterID' has not been declared
+     void subPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:404:17: error: 'TrustedImm32' has not been declared
+     void subPtr(TrustedImm32 imm, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:404:35: error: 'RegisterID' has not been declared
+     void subPtr(TrustedImm32 imm, RegisterID dest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:404:10: error: 'void JSC::MacroAssembler::subPtr(int, int)' cannot be overloaded
+     void subPtr(TrustedImm32 imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:10: error: with 'void JSC::MacroAssembler::subPtr(int, int)'
+     void subPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:409:17: error: 'TrustedImmPtr' has not been declared
+     void subPtr(TrustedImmPtr imm, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:409:36: error: 'RegisterID' has not been declared
+     void subPtr(TrustedImmPtr imm, RegisterID dest)
+                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:409:10: error: 'void JSC::MacroAssembler::subPtr(int, int)' cannot be overloaded
+     void subPtr(TrustedImmPtr imm, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:399:10: error: with 'void JSC::MacroAssembler::subPtr(int, int)'
+     void subPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:414:17: error: 'RegisterID' has not been declared
+     void xorPtr(RegisterID src, RegisterID dest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:414:33: error: 'RegisterID' has not been declared
+     void xorPtr(RegisterID src, RegisterID dest)
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:419:17: error: 'TrustedImm32' has not been declared
+     void xorPtr(TrustedImm32 imm, RegisterID srcDest)
+                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:419:35: error: 'RegisterID' has not been declared
+     void xorPtr(TrustedImm32 imm, RegisterID srcDest)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:419:10: error: 'void JSC::MacroAssembler::xorPtr(int, int)' cannot be overloaded
+     void xorPtr(TrustedImm32 imm, RegisterID srcDest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:414:10: error: with 'void JSC::MacroAssembler::xorPtr(int, int)'
+     void xorPtr(RegisterID src, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:425:18: error: 'ImplicitAddress' has not been declared
+     void loadPtr(ImplicitAddress address, RegisterID dest)
+                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:425:43: error: 'RegisterID' has not been declared
+     void loadPtr(ImplicitAddress address, RegisterID dest)
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:430:18: error: 'BaseIndex' has not been declared
+     void loadPtr(BaseIndex address, RegisterID dest)
+                  ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:430:37: error: 'RegisterID' has not been declared
+     void loadPtr(BaseIndex address, RegisterID dest)
+                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:430:10: error: 'void JSC::MacroAssembler::loadPtr(int, int)' cannot be overloaded
+     void loadPtr(BaseIndex address, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:425:10: error: with 'void JSC::MacroAssembler::loadPtr(int, int)'
+     void loadPtr(ImplicitAddress address, RegisterID dest)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:435:39: error: 'RegisterID' has not been declared
+     void loadPtr(const void* address, RegisterID dest)
+                                       ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:440:5: error: 'DataLabel32' does not name a type
+     DataLabel32 loadPtrWithAddressOffsetPatch(Address address, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:445:5: error: 'DataLabelCompact' does not name a type
+     DataLabelCompact loadPtrWithCompactAddressOffsetPatch(Address address, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:450:15: error: 'ImmPtr' has not been declared
+     void move(ImmPtr imm, RegisterID dest)
+               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:450:27: error: 'RegisterID' has not been declared
+     void move(ImmPtr imm, RegisterID dest)
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:21: error: 'RelationalCondition' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:47: error: 'RegisterID' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:64: error: 'TrustedImm32' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:455:84: error: 'RegisterID' has not been declared
+     void comparePtr(RelationalCondition cond, RegisterID left, TrustedImm32 right, RegisterID dest)
+                                                                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:19: error: 'RegisterID' has not been declared
+     void storePtr(RegisterID src, ImplicitAddress address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:35: error: 'ImplicitAddress' has not been declared
+     void storePtr(RegisterID src, ImplicitAddress address)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:465:19: error: 'RegisterID' has not been declared
+     void storePtr(RegisterID src, BaseIndex address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:465:35: error: 'BaseIndex' has not been declared
+     void storePtr(RegisterID src, BaseIndex address)
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:465:10: error: 'void JSC::MacroAssembler::storePtr(int, int)' cannot be overloaded
+     void storePtr(RegisterID src, BaseIndex address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:10: error: with 'void JSC::MacroAssembler::storePtr(int, int)'
+     void storePtr(RegisterID src, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:470:19: error: 'RegisterID' has not been declared
+     void storePtr(RegisterID src, void* address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:475:19: error: 'TrustedImmPtr' has not been declared
+     void storePtr(TrustedImmPtr imm, ImplicitAddress address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:475:38: error: 'ImplicitAddress' has not been declared
+     void storePtr(TrustedImmPtr imm, ImplicitAddress address)
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:475:10: error: 'void JSC::MacroAssembler::storePtr(int, int)' cannot be overloaded
+     void storePtr(TrustedImmPtr imm, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:10: error: with 'void JSC::MacroAssembler::storePtr(int, int)'
+     void storePtr(RegisterID src, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:480:19: error: 'ImmPtr' has not been declared
+     void storePtr(ImmPtr imm, Address address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:480:31: error: 'Address' has not been declared
+     void storePtr(ImmPtr imm, Address address)
+                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:480:10: error: 'void JSC::MacroAssembler::storePtr(int, int)' cannot be overloaded
+     void storePtr(ImmPtr imm, Address address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:460:10: error: with 'void JSC::MacroAssembler::storePtr(int, int)'
+     void storePtr(RegisterID src, ImplicitAddress address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:485:19: error: 'TrustedImmPtr' has not been declared
+     void storePtr(TrustedImmPtr imm, void* address)
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:485:10: error: 'void JSC::MacroAssembler::storePtr(int, void*)' cannot be overloaded
+     void storePtr(TrustedImmPtr imm, void* address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:470:10: error: with 'void JSC::MacroAssembler::storePtr(int, void*)'
+     void storePtr(RegisterID src, void* address)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:490:5: error: 'DataLabel32' does not name a type
+     DataLabel32 storePtrWithAddressOffsetPatch(RegisterID src, Address address)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:495:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:500:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, TrustedImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:505:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, ImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:510:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, RegisterID left, Address right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:515:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, Address left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:520:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, AbsoluteAddress left, RegisterID right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:525:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, Address left, TrustedImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:530:5: error: 'Jump' does not name a type
+     Jump branchPtr(RelationalCondition cond, AbsoluteAddress left, TrustedImmPtr right)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:535:5: error: 'Jump' does not name a type
+     Jump branchSubPtr(ResultCondition cond, RegisterID src, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:540:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, RegisterID reg, RegisterID mask)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:545:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, RegisterID reg, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:550:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, Address address, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:555:5: error: 'Jump' does not name a type
+     Jump branchTestPtr(ResultCondition cond, BaseIndex address, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:560:5: error: 'Jump' does not name a type
+     Jump branchAddPtr(ResultCondition cond, RegisterID src, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:565:5: error: 'Jump' does not name a type
+     Jump branchSubPtr(ResultCondition cond, TrustedImm32 imm, RegisterID dest)
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:569:11: error: 'MacroAssemblerBase' has not been declared
+     using MacroAssemblerBase::branchTest8;
+           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:570:5: error: 'Jump' does not name a type
+     Jump branchTest8(ResultCondition cond, ExtendedAddress address, TrustedImm32 mask = TrustedImm32(-1))
+     ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::pop()':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:158:42: error: 'TrustedImm32' was not declared in this scope
+         addPtr(TrustedImm32(sizeof(void*)), stackPointerRegister);
+                                          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:158:45: error: 'stackPointerRegister' was not declared in this scope
+         addPtr(TrustedImm32(sizeof(void*)), stackPointerRegister);
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::peek(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:163:25: error: 'stackPointerRegister' was not declared in this scope
+         loadPtr(Address(stackPointerRegister, (index * sizeof(void*))), dest);
+                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:163:70: error: 'Address' was not declared in this scope
+         loadPtr(Address(stackPointerRegister, (index * sizeof(void*))), dest);
+                                                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::poke(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:173:43: error: 'addressForPoke' was not declared in this scope
+         storePtr(src, addressForPoke(index));
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::poke(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:178:44: error: 'addressForPoke' was not declared in this scope
+         store32(value, addressForPoke(index));
+                                            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:178:45: error: 'store32' was not declared in this scope
+         store32(value, addressForPoke(index));
+                                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::poke(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:183:43: error: 'addressForPoke' was not declared in this scope
+         storePtr(imm, addressForPoke(index));
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branchPtr(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:214:33: error: no matching function for call to 'JSC::MacroAssembler::branchPtr(int&, int&, int&)'
+         branchPtr(cond, op1, imm).linkTo(target, this);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:214:33: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note: void JSC::MacroAssembler::branchPtr(int, int, int, int)
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branchPtr(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:218:33: error: no matching function for call to 'JSC::MacroAssembler::branchPtr(int&, int&, int&)'
+         branchPtr(cond, op1, imm).linkTo(target, this);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:218:33: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note: void JSC::MacroAssembler::branchPtr(int, int, int, int)
+     void branchPtr(RelationalCondition cond, RegisterID op1, TrustedImmPtr imm, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:212:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:223:32: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, op1, op2).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:223:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:228:32: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, op1, imm).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:228:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:233:32: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, op1, imm).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:233:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branch32(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:238:35: error: no matching function for call to 'JSC::MacroAssembler::branch32(int&, int&, int&)'
+         branch32(cond, left, right).linkTo(target, this);
+                                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:238:35: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note: void JSC::MacroAssembler::branch32(int, int, int, int)
+     void branch32(RelationalCondition cond, RegisterID op1, RegisterID op2, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:221:10: note:   candidate expects 4 arguments, 3 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::branchTestPtr(int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:253:32: error: no matching function for call to 'JSC::MacroAssembler::branchTestPtr(int&, int&)'
+         branchTestPtr(cond, reg).linkTo(target, this);
+                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:253:32: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:10: note: void JSC::MacroAssembler::branchTestPtr(int, int, int)
+     void branchTestPtr(ResultCondition cond, RegisterID reg, Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:251:10: note:   candidate expects 3 arguments, 2 provided
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::jump(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:287:14: error: no matching function for call to 'JSC::MacroAssembler::jump()'
+         jump().linkTo(target, this);
+              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:287:14: note: candidate is:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:285:10: note: void JSC::MacroAssembler::jump(int)
+     void jump(Label target)
+          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:285:10: note:   candidate expects 1 argument, 0 provided
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:331:24: error: 'add32' was not declared in this scope
+         add32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:336:24: error: 'add32' was not declared in this scope
+         add32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:341:24: error: 'add32' was not declared in this scope
+         add32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:346:27: error: 'add32' was not declared in this scope
+         add32(imm, srcDest);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:351:31: error: 'TrustedImm32' was not declared in this scope
+         add32(TrustedImm32(imm), dest);
+                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:351:38: error: 'add32' was not declared in this scope
+         add32(TrustedImm32(imm), dest);
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:356:29: error: 'add32' was not declared in this scope
+         add32(imm, src, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::addPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:361:27: error: 'add32' was not declared in this scope
+         add32(imm, address);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::andPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:366:24: error: 'and32' was not declared in this scope
+         and32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::andPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:371:27: error: 'and32' was not declared in this scope
+         and32(imm, srcDest);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::negPtr(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:376:19: error: 'neg32' was not declared in this scope
+         neg32(dest);
+                   ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:381:23: error: 'or32' was not declared in this scope
+         or32(src, dest);
+                       ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:386:28: error: 'or32' was not declared in this scope
+         or32(op1, op2, dest);
+                            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:391:30: error: 'TrustedImm32' was not declared in this scope
+         or32(TrustedImm32(imm), dest);
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:391:37: error: 'or32' was not declared in this scope
+         or32(TrustedImm32(imm), dest);
+                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::orPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:396:23: error: 'or32' was not declared in this scope
+         or32(imm, dest);
+                       ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::subPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:401:24: error: 'sub32' was not declared in this scope
+         sub32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::subPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:406:24: error: 'sub32' was not declared in this scope
+         sub32(imm, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::subPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:411:31: error: 'TrustedImm32' was not declared in this scope
+         sub32(TrustedImm32(imm), dest);
+                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:411:38: error: 'sub32' was not declared in this scope
+         sub32(TrustedImm32(imm), dest);
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::xorPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:416:24: error: 'xor32' was not declared in this scope
+         xor32(src, dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::xorPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:421:27: error: 'xor32' was not declared in this scope
+         xor32(imm, srcDest);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::loadPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:427:29: error: 'load32' was not declared in this scope
+         load32(address, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::loadPtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:432:29: error: 'load32' was not declared in this scope
+         load32(address, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::loadPtr(const void*, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:437:29: error: 'load32' was not declared in this scope
+         load32(address, dest);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::move(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:452:24: error: request for member 'asTrustedImmPtr' in 'imm', which is of non-class type 'int'
+         move(Imm32(imm.asTrustedImmPtr()), dest);
+                        ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:452:41: error: 'Imm32' was not declared in this scope
+         move(Imm32(imm.asTrustedImmPtr()), dest);
+                                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::comparePtr(int, int, int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:457:42: error: 'compare32' was not declared in this scope
+         compare32(cond, left, right, dest);
+                                          ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:462:29: error: 'store32' was not declared in this scope
+         store32(src, address);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:467:29: error: 'store32' was not declared in this scope
+         store32(src, address);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, void*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:472:29: error: 'store32' was not declared in this scope
+         store32(src, address);
+                             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:477:33: error: 'TrustedImm32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:477:43: error: 'store32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:482:27: error: request for member 'asTrustedImmPtr' in 'imm', which is of non-class type 'int'
+         store32(Imm32(imm.asTrustedImmPtr()), address);
+                           ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:482:44: error: 'Imm32' was not declared in this scope
+         store32(Imm32(imm.asTrustedImmPtr()), address);
+                                            ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:482:54: error: 'store32' was not declared in this scope
+         store32(Imm32(imm.asTrustedImmPtr()), address);
+                                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h: In member function 'void JSC::MacroAssembler::storePtr(int, void*)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:487:33: error: 'TrustedImm32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/assembler/MacroAssembler.h:487:43: error: 'store32' was not declared in this scope
+         store32(TrustedImm32(imm), address);
+                                           ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: At global scope:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:117:48: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery inGPR(MacroAssembler::RegisterID gpr, DataFormat dataFormat)
+                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:134:54: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery uint32InGPR(MacroAssembler::RegisterID gpr)
+                                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:143:49: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery inPair(MacroAssembler::RegisterID tagGPR, MacroAssembler::RegisterID payloadGPR)
+                                                 ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:143:84: error: 'JSC::MacroAssembler::RegisterID' has not been declared
+     static ValueRecovery inPair(MacroAssembler::RegisterID tagGPR, MacroAssembler::RegisterID payloadGPR)
+                                                                                    ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:153:48: error: 'JSC::MacroAssembler::FPRegisterID' has not been declared
+     static ValueRecovery inFPR(MacroAssembler::FPRegisterID fpr)
+                                                ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:239:5: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::RegisterID gpr() const
+     ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:246:5: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::RegisterID tagGPR() const
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:252:5: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::RegisterID payloadGPR() const
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:259:5: error: 'FPRegisterID' in 'class JSC::MacroAssembler' does not name a type
+     MacroAssembler::FPRegisterID fpr() const
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:348:9: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+         MacroAssembler::RegisterID gpr;
+         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:349:9: error: 'FPRegisterID' in 'class JSC::MacroAssembler' does not name a type
+         MacroAssembler::FPRegisterID fpr;
+         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:352:13: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+             MacroAssembler::RegisterID tagGPR;
+             ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:353:13: error: 'RegisterID' in 'class JSC::MacroAssembler' does not name a type
+             MacroAssembler::RegisterID payloadGPR;
+             ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::inGPR(int, JSC::DataFormat)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:130:25: error: 'union JSC::ValueRecovery::<anonymous>' has no member named 'gpr'
+         result.m_source.gpr = gpr;
+                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::uint32InGPR(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:138:25: error: 'union JSC::ValueRecovery::<anonymous>' has no member named 'gpr'
+         result.m_source.gpr = gpr;
+                         ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::inPair(int, int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:147:30: error: 'struct JSC::ValueRecovery::<anonymous union>::<anonymous>' has no member named 'tagGPR'
+         result.m_source.pair.tagGPR = tagGPR;
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:148:30: error: 'struct JSC::ValueRecovery::<anonymous union>::<anonymous>' has no member named 'payloadGPR'
+         result.m_source.pair.payloadGPR = payloadGPR;
+                              ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In static member function 'static JSC::ValueRecovery JSC::ValueRecovery::inFPR(int)':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:157:25: error: 'union JSC::ValueRecovery::<anonymous>' has no member named 'fpr'
+         result.m_source.fpr = fpr;
+                         ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeOrigin.h:31:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/CodeBlock.h:39,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:29:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h: In member function 'void JSC::ValueRecovery::dump(WTF::PrintStream&) const':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:296:37: error: 'gpr' was not declared in this scope
+             out.printf("%%r%d", gpr());
+                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:308:38: error: 'fpr' was not declared in this scope
+             out.printf("%%fr%d", fpr());
+                                      ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:312:53: error: 'tagGPR' was not declared in this scope
+             out.printf("pair(%%r%d, %%r%d)", tagGPR(), payloadGPR());
+                                                     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/bytecode/ValueRecovery.h:312:67: error: 'payloadGPR' was not declared in this scope
+             out.printf("pair(%%r%d, %%r%d)", tagGPR(), payloadGPR());
+                                                                   ^
+In file included from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/PossiblyNull.h:29:0,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/FastMalloc.h:25,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/config.h:69,
+                 from /root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/llint/LLIntOffsetsExtractor.cpp:26:
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h: In instantiation of 'TO WTF::bitwise_cast(FROM) [with TO = JSC::JSCell*; FROM = int]':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter/Register.h:196:47:   required from here
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/Assertions.h:328:47: error: size of array is negative
+ #define COMPILE_ASSERT(exp, name) typedef int dummy##name [(exp) ? 1 : -1]
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h:134:5: note: in expansion of macro 'COMPILE_ASSERT'
+     COMPILE_ASSERT(sizeof(TO) == sizeof(FROM), WTF_bitwise_cast_sizeof_casted_types_is_equal);
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h: In instantiation of 'TO WTF::bitwise_cast(FROM) [with TO = JSC::Instruction*; FROM = int]':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter/CallFrame.h:154:81:   required from here
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/Assertions.h:328:47: error: size of array is negative
+ #define COMPILE_ASSERT(exp, name) typedef int dummy##name [(exp) ? 1 : -1]
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h:134:5: note: in expansion of macro 'COMPILE_ASSERT'
+     COMPILE_ASSERT(sizeof(TO) == sizeof(FROM), WTF_bitwise_cast_sizeof_casted_types_is_equal);
+     ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h: In instantiation of 'TO WTF::bitwise_cast(FROM) [with TO = int; FROM = JSC::Instruction*]':
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/JavaScriptCore/interpreter/CallFrame.h:158:75:   required from here
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/Assertions.h:328:47: error: size of array is negative
+ #define COMPILE_ASSERT(exp, name) typedef int dummy##name [(exp) ? 1 : -1]
+                                               ^
+/root/rpmbuild/BUILD/webkit-qtwebkit-23/Source/WTF/wtf/StdLibExtras.h:134:5: note: in expansion of macro 'COMPILE_ASSERT'
+     COMPILE_ASSERT(sizeof(TO) == sizeof(FROM), WTF_bitwise_cast_sizeof_casted_types_is_equal);
+     ^
+make[3]: *** [obj/release/LLIntOffsetsExtractor.o] Error 1
+make[3]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore'
+make[2]: *** [sub-LLIntOffsetsExtractor-pro-make_for_qmake] Error 2
+make[2]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release/Source/JavaScriptCore'
+make[1]: *** [sub-Source-JavaScriptCore-JavaScriptCore-pro-recursive_qmake] Error 2
+make[1]: Leaving directory `/root/rpmbuild/BUILD/webkit-qtwebkit-23/aarch64-redhat-linux-gnu/Release'
+make: *** [incremental] Error 2
+error: Bad exit status from /var/tmp/rpm-tmp.WdN1dA (%build)
+
+
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.WdN1dA (%build)
